@@ -1,0 +1,35 @@
+name: Garman-Klass Daily Alert
+
+on:
+  schedule:
+    # Jalankan setiap hari Senin-Jumat jam 17:00 WIB (10:00 UTC)
+    - cron: '0 10 * * 1-5'
+  workflow_dispatch:  # Bisa di-trigger manual dari GitHub UI
+
+jobs:
+  scan-and-alert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy pandas yfinance requests
+
+      - name: Run Garman-Klass Alert Scanner
+        env:
+          # AMAN: Token & Chat ID diambil dari GitHub Secrets,
+          # bukan di-hardcode di script.
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          cd GKHV
+          python telegram_alert.py

@@ -1,0 +1,976 @@
+Ticker,Nama,Type,Region
+^JKSE,IHSG,Index,Asean
+^IXIC,NASDAQ,Index,America
+^GSPC,S&P 500,Index,America
+^DJI,DOW JONES,Index,America
+^KS11,KOSPI,Index,Asia
+^N225,NIKKEI 225,Index,Asia
+^HIS,HANG SENG,Index,Asia
+000001.SS,SSE,Index,Asia
+^GDAXI,DAX,Index,Europe
+^FTSE,FTSE 100,Index,Europe
+^SET.BK,Thailand Stock Index,Index,Asean
+^VNINDEX.VN,Vietnam Stock Index,Index,Asean
+^KLSE,Malaysia Stock Index,Index,Asean
+^PSEI.PS,Filipina Stock Index,Index,Asean
+^BSESN,Sensex India,Index,Asia
+^VIX,CBOE Volatility Index,Index,America
+^RUT,Russell 2000,Index,America
+GC=F,Gold,Commodities,Global
+SI=F,Silver,Commodities,Global
+BTC-USD,Bitcoin,Crypto,Global
+ETH-USD,Ethereum,Crypto,Global
+SOL-USD,Solana,Crypto,Global
+^FCHI,CAC 40,Index,Europe
+IDXENERGY.JK,IDX ENERGY,Index,Indonesia
+IDXFINANCE.JK,IDX FINANCE,Index,Indonesia
+IDXTRANS.JK,IDX TRANSPOERTATION,Index,Indonesia
+IDXCYCLIC.JK,IDX CYCLIC,Index,Indonesia
+IDXNONCYC.JK,IDX NONCYCLICAL,Index,Indonesia
+IDXTECHNO.JK,IDX TECHNOLOGY,Index,Indonesia
+IDXBASIC.JK,IDX BASIC,Index,Indonesia
+IDXPROPERT.JK,IDX PROPERTY,Index,Indonesia
+IDXINDUST.JK,IDX INDUSTRY,Index,Indonesia
+IDXHEALTH.JK,IDX HEALTH,Index,Indonesia
+IDXINFRA.JK,IDX INFRASTUCTURE,Index,Indonesia
+AALI.JK,Astra Agro Lestari Tbk.,Stock,Indonesia
+ABBA.JK,Mahaka Media Tbk.,Stock,Indonesia
+ABDA.JK,Asuransi Bina Dana Arta Tbk.,Stock,Indonesia
+ABMM.JK,ABM Investama Tbk.,Stock,Indonesia
+ACES.JK,Aspirasi Hidup Indonesia Tbk.,Stock,Indonesia
+ACRO.JK,Samcro Hyosung Adilestari Tbk.,Stock,Indonesia
+ACST.JK,Acset Indonusa Tbk.,Stock,Indonesia
+ADCP.JK,Adhi Commuter Properti Tbk.,Stock,Indonesia
+ADES.JK,Akasha Wira International Tbk.,Stock,Indonesia
+ADHI.JK,Adhi Karya (Persero) Tbk.,Stock,Indonesia
+ADMF.JK,Adira Dinamika Multi Finance T,Stock,Indonesia
+ADMG.JK,Polychem Indonesia Tbk,Stock,Indonesia
+ADMR.JK,Adaro Minerals Indonesia Tbk.,Stock,Indonesia
+ADRO.JK,Alamtri Resources Indonesia Tb,Stock,Indonesia
+AEGS.JK,Anugerah Spareparts Sejahtera,Stock,Indonesia
+AGAR.JK,Asia Sejahtera Mina Tbk.,Stock,Indonesia
+AGII.JK,Samator Indo Gas Tbk.,Stock,Indonesia
+AGRO.JK,Bank Raya Indonesia Tbk.,Stock,Indonesia
+AGRS.JK,Bank IBK Indonesia Tbk.,Stock,Indonesia
+AHAP.JK,Asuransi Harta Aman Pratama Tbk.,Stock,Indonesia
+AIMS.JK,Artha Mahiya Investama Tbk.,Stock,Indonesia
+AISA.JK,FKS Food Sejahtera Tbk.,Stock,Indonesia
+AKKU.JK,Anugerah Kagum Karya Utama Tbk,Stock,Indonesia
+AKPI.JK,Argha Karya Prima Industry Tbk,Stock,Indonesia
+AKRA.JK,AKR Corporindo Tbk.,Stock,Indonesia
+AKSI.JK,Mineral Sumberdaya Mandiri Tbk,Stock,Indonesia
+ALDO.JK,Alkindo Naratama Tbk.,Stock,Indonesia
+ALII.JK,Ancara Logistics Indonesia Tbk,Stock,Indonesia
+ALKA.JK,Alakasa Industrindo Tbk,Stock,Indonesia
+ALMI.JK,Alumindo Light Metal Industry,Stock,Indonesia
+ALTO.JK,Tri Banyan Tirta Tbk.,Stock,Indonesia
+AMAG.JK,Asuransi Multi Artha Guna Tbk.,Stock,Indonesia
+AMAN.JK,Makmur Berkah Amanda Tbk.,Stock,Indonesia
+AMAR.JK,Bank Amar Indonesia Tbk.,Stock,Indonesia
+AMFG.JK,Asahimas Flat Glass Tbk.,Stock,Indonesia
+AMIN.JK,Ateliers Mecaniques D Indonesi,Stock,Indonesia
+AMMN.JK,Amman Mineral Internasional Tb,Stock,Indonesia
+AMMS.JK,Agung Menjangan Mas Tbk.,Stock,Indonesia
+AMOR.JK,Ashmore Asset Management Indon,Stock,Indonesia
+AMRT.JK,Sumber Alfaria Trijaya Tbk.,Stock,Indonesia
+ANDI.JK,Andira Agro Tbk.,Stock,Indonesia
+ANJT.JK,Austindo Nusantara Jaya Tbk.,Stock,Indonesia
+ANTM.JK,Aneka Tambang Tbk.,Stock,Indonesia
+APEX.JK,Apexindo Pratama Duta Tbk.,Stock,Indonesia
+APIC.JK,Pacific Strategic Financial Tb,Stock,Indonesia
+APII.JK,Arita Prima Indonesia Tbk.,Stock,Indonesia
+APLI.JK,Asiaplast Industries Tbk.,Stock,Indonesia
+APLN.JK,Agung Podomoro Land Tbk.,Stock,Indonesia
+ARCI.JK,Archi Indonesia Tbk.,Stock,Indonesia
+AREA.JK,Dunia Virtual Online Tbk.,Stock,Indonesia
+ARGO.JK,Argo Pantes Tbk,Stock,Indonesia
+ARII.JK,Atlas Resources Tbk.,Stock,Indonesia
+ARKA.JK,Arkha Jayanti Persada Tbk.,Stock,Indonesia
+ARKO.JK,Arkora Hydro Tbk.,Stock,Indonesia
+ARMY.JK,Armidian Karyatama Tbk.,Stock,Indonesia
+ARNA.JK,Arwana Citramulia Tbk.,Stock,Indonesia
+ARTA.JK,Arthavest Tbk,Stock,Indonesia
+ARTI.JK,Ratu Prabu Energi Tbk,Stock,Indonesia
+ARTO.JK,Bank Jago Tbk.,Stock,Indonesia
+ASBI.JK,Asuransi Bintang Tbk.,Stock,Indonesia
+ASDM.JK,Asuransi Dayin Mitra Tbk.,Stock,Indonesia
+ASGR.JK,Astra Graphia Tbk.,Stock,Indonesia
+ASHA.JK,Cilacap Samudera Fishing Indus,Stock,Indonesia
+ASII.JK,Astra International Tbk.,Stock,Indonesia
+ASJT.JK,Asuransi Jasa Tania Tbk.,Stock,Indonesia
+ASLC.JK,Autopedia Sukses Lestari Tbk.,Stock,Indonesia
+ASLI.JK,Asri Karya Lestari Tbk.,Stock,Indonesia
+ASMI.JK,Asuransi Maximus Graha Persada,Stock,Indonesia
+ASPI.JK,Andalan Sakti Primaindo Tbk.,Stock,Indonesia
+ASRI.JK,Alam Sutera Realty Tbk.,Stock,Indonesia
+ASRM.JK,Asuransi Ramayana Tbk.,Stock,Indonesia
+ASSA.JK,Adi Sarana Armada Tbk.,Stock,Indonesia
+ATAP.JK,Trimitra Prawara Goldland Tbk.,Stock,Indonesia
+ATIC.JK,Anabatic Technologies Tbk.,Stock,Indonesia
+ATLA.JK,Atlantis Subsea Indonesia Tbk.,Stock,Indonesia
+AUTO.JK,Astra Otoparts Tbk.,Stock,Indonesia
+AVIA.JK,Avia Avian Tbk.,Stock,Indonesia
+AWAN.JK,Era Digital Media Tbk.,Stock,Indonesia
+AXIO.JK,Tera Data Indonusa Tbk.,Stock,Indonesia
+AYAM.JK,Janu Putra Sejahtera Tbk.,Stock,Indonesia
+AYLS.JK,Agro Yasa Lestari Tbk.,Stock,Indonesia
+PTBA.JK,Bukit Asam Tbk.,Stock,Indonesia
+BABP.JK,Bank MNC Internasional Tbk.,Stock,Indonesia
+BABY.JK,Multitrend Indo Tbk.,Stock,Indonesia
+BACA.JK,Bank Capital Indonesia Tbk.,Stock,Indonesia
+BAIK.JK,Bersama Mencapai Puncak Tbk.,Stock,Indonesia
+BAJA.JK,Saranacentral Bajatama Tbk.,Stock,Indonesia
+BALI.JK,Bali Towerindo Sentra Tbk.,Stock,Indonesia
+BANK.JK,Bank Aladin Syariah Tbk.,Stock,Indonesia
+BAPA.JK,Bekasi Asri Pemula Tbk.,Stock,Indonesia
+BAPI.JK,Bhakti Agung Propertindo Tbk.,Stock,Indonesia
+BATA.JK,Sepatu Bata Tbk.,Stock,Indonesia
+BATR.JK,Benteng Api Technic Tbk.,Stock,Indonesia
+BAUT.JK,Mitra Angkasa Sejahtera Tbk.,Stock,Indonesia
+BAYU.JK,Bayu Buana Tbk,Stock,Indonesia
+BBCA.JK,Bank Central Asia Tbk.,Stock,Indonesia
+BBHI.JK,Allo Bank Indonesia Tbk.,Stock,Indonesia
+BBKP.JK,Bank KB Bukopin Tbk.,Stock,Indonesia
+BBLD.JK,Buana Finance Tbk.,Stock,Indonesia
+BBMD.JK,Bank Mestika Dharma Tbk.,Stock,Indonesia
+BBNI.JK,Bank Negara Indonesia (Persero) Tbk.,Stock,Indonesia
+BBRI.JK,Bank Rakyat Indonesia (Persero) Tbk.,Stock,Indonesia
+BBRM.JK,Pelayaran Nasional Bina Buana,Stock,Indonesia
+BBSI.JK,Krom Bank Indonesia Tbk.,Stock,Indonesia
+BBSS.JK,Bumi Benowo Sukses Sejahtera T,Stock,Indonesia
+BBTN.JK,Bank Tabungan Negara (Persero),Stock,Indonesia
+BBYB.JK,Bank Neo Commerce Tbk.,Stock,Indonesia
+BCAP.JK,MNC Kapital Indonesia Tbk.,Stock,Indonesia
+BCIC.JK,Bank JTrust Indonesia Tbk.,Stock,Indonesia
+BCIP.JK,Bumi Citra Permai Tbk.,Stock,Indonesia
+BDKR.JK,Berdikari Pondasi Perkasa Tbk.,Stock,Indonesia
+BDMN.JK,Bank Danamon Indonesia Tbk.,Stock,Indonesia
+BEBS.JK,Berkah Beton Sadaya Tbk.,Stock,Indonesia
+BEEF.JK,Estika Tata Tiara Tbk.,Stock,Indonesia
+BEER.JK,Jobubu Jarum Minahasa Tbk.,Stock,Indonesia
+BEKS.JK,Bank Pembangunan Daerah Banten,Stock,Indonesia
+BELI.JK,Global Digital Niaga Tbk.,Stock,Indonesia
+BELL.JK,Trisula Textile Industries Tbk,Stock,Indonesia
+BESS.JK,Batulicin Nusantara Maritim Tb,Stock,Indonesia
+BEST.JK,Bekasi Fajar Industrial Estate,Stock,Indonesia
+BFIN.JK,BFI Finance Indonesia Tbk.,Stock,Indonesia
+BGTG.JK,Bank Ganesha Tbk.,Stock,Indonesia
+BHAT.JK,Bhakti Multi Artha Tbk.,Stock,Indonesia
+BHIT.JK,MNC Asia Holding Tbk.,Stock,Indonesia
+BIKA.JK,Binakarya Jaya Abadi Tbk.,Stock,Indonesia
+BIKE.JK,Sepeda Bersama Indonesia Tbk.,Stock,Indonesia
+BIMA.JK,Primarindo Asia Infrastructure,Stock,Indonesia
+BINA.JK,Bank Ina Perdana Tbk.,Stock,Indonesia
+BINO.JK,Perma Plasindo Tbk.,Stock,Indonesia
+BIPI.JK,Astrindo Nusantara Infrastrukt,Stock,Indonesia
+BIPP.JK,Bhuwanatala Indah Permai Tbk.,Stock,Indonesia
+BIRD.JK,Blue Bird Tbk.,Stock,Indonesia
+BISI.JK,BISI International Tbk.,Stock,Indonesia
+BJBR.JK,Bank Pembangunan Daerah Jawa B,Stock,Indonesia
+BJTM.JK,Bank Pembangunan Daerah Jawa T,Stock,Indonesia
+BKDP.JK,Bukit Darmo Property Tbk.,Stock,Indonesia
+BKSL.JK,Sentul City Tbk.,Stock,Indonesia
+BKSW.JK,Bank QNB Indonesia Tbk.,Stock,Indonesia
+BLES.JK,Superior Prima Sukses Tbk.,Stock,Indonesia
+BLTA.JK,Berlian Laju Tanker Tbk,Stock,Indonesia
+BLTZ.JK,Graha Layar Prima Tbk.,Stock,Indonesia
+BLUE.JK,Berkah Prima Perkasa Tbk.,Stock,Indonesia
+BMAS.JK,Bank Maspion Indonesia Tbk.,Stock,Indonesia
+BMBL.JK,Lavender Bina Cendikia Tbk.,Stock,Indonesia
+BMHS.JK,Bundamedik Tbk.,Stock,Indonesia
+BMRI.JK,Bank Mandiri (Persero) Tbk.,Stock,Indonesia
+BMSR.JK,Bintang Mitra Semestaraya Tbk,Stock,Indonesia
+BMTR.JK,Global Mediacom Tbk.,Stock,Indonesia
+BNBA.JK,Bank Bumi Arta Tbk.,Stock,Indonesia
+BNBR.JK,Bakrie & Brothers Tbk,Stock,Indonesia
+BNGA.JK,Bank CIMB Niaga Tbk.,Stock,Indonesia
+BNII.JK,Bank Maybank Indonesia Tbk.,Stock,Indonesia
+BNLI.JK,Bank Permata Tbk.,Stock,Indonesia
+BOAT.JK,Newport Marine Services Tbk.,Stock,Indonesia
+BOBA.JK,Formosa Ingredient Factory Tbk,Stock,Indonesia
+BOGA.JK,Bintang Oto Global Tbk.,Stock,Indonesia
+BOLA.JK,Bali Bintang Sejahtera Tbk.,Stock,Indonesia
+BOLT.JK,Garuda Metalindo Tbk.,Stock,Indonesia
+BOSS.JK,Borneo Olah Sarana Sukses Tbk.,Stock,Indonesia
+BPFI.JK,Woori Finance Indonesia Tbk.,Stock,Indonesia
+BPII.JK,Batavia Prosperindo Internasio,Stock,Indonesia
+BPTR.JK,Batavia Prosperindo Trans Tbk.,Stock,Indonesia
+BRPT.JK,Barito Pacific Tbk.,Stock,Indonesia
+BRAM.JK,Indo Kordsa Tbk.,Stock,Indonesia
+BREN.JK,Barito Renewables Energy Tbk.,Stock,Indonesia
+BRIS.JK,Bank Syariah Indonesia Tbk.,Stock,Indonesia
+BRMS.JK,Bumi Resources Minerals Tbk.,Stock,Indonesia
+BRNA.JK,Berlina Tbk.,Stock,Indonesia
+BSBK.JK,Wulandari Bangun Laksana Tbk.,Stock,Indonesia
+BSDE.JK,Bumi Serpong Damai Tbk.,Stock,Indonesia
+BSIM.JK,Bank Sinarmas Tbk.,Stock,Indonesia
+BSML.JK,Bintang Samudera Mandiri Lines,Stock,Indonesia
+BSSR.JK,Baramulti Suksessarana Tbk.,Stock,Indonesia
+BSWD.JK,Bank Of India Indonesia Tbk.,Stock,Indonesia
+BTEK.JK,Bumi Teknokultura Unggul Tbk,Stock,Indonesia
+BTEL.JK,Bakrie Telecom Tbk.,Stock,Indonesia
+BTON.JK,Betonjaya Manunggal Tbk.,Stock,Indonesia
+BTPN.JK,Bank SMBC Indonesia Tbk.,Stock,Indonesia
+BTPS.JK,Bank BTPN Syariah Tbk.,Stock,Indonesia
+BUAH.JK,Segar Kumala Indonesia Tbk.,Stock,Indonesia
+BUDI.JK,Budi Starch & Sweetener Tbk.,Stock,Indonesia
+BUKA.JK,Bukalapak.com Tbk.,Stock,Indonesia
+BUKK.JK,Bukaka Teknik Utama Tbk.,Stock,Indonesia
+BULL.JK,Buana Lintas Lautan Tbk.,Stock,Indonesia
+BUMI.JK,Bumi Resources Tbk.,Stock,Indonesia
+BUVA.JK,Bukit Uluwatu Villa Tbk.,Stock,Indonesia
+BVIC.JK,Bank Victoria International Tb,Stock,Indonesia
+BWPT.JK,Eagle High Plantations Tbk.,Stock,Indonesia
+BYAN.JK,Bayan Resources Tbk.,Stock,Indonesia
+CAKK.JK,Cahayaputra Asa Keramik Tbk.,Stock,Indonesia
+CAMP.JK,Campina Ice Cream Industry Tbk,Stock,Indonesia
+CANI.JK,Capitol Nusantara Indonesia Tb,Stock,Indonesia
+CARE.JK,Metro Healthcare Indonesia Tbk,Stock,Indonesia
+CARS.JK,Industri dan Perdagangan Bintr,Stock,Indonesia
+CASA.JK,Capital Financial Indonesia Tb,Stock,Indonesia
+CASH.JK,Cashlez Worldwide Indonesia Tb,Stock,Indonesia
+CASS.JK,Cardig Aero Services Tbk.,Stock,Indonesia
+CBMF.JK,Cahaya Bintang Medan Tbk.,Stock,Indonesia
+CBPE.JK,Citra Buana Prasida Tbk.,Stock,Indonesia
+CBRE.JK,Cakra Buana Resources Energi T,Stock,Indonesia
+CBUT.JK,Citra Borneo Utama Tbk.,Stock,Indonesia
+CCSI.JK,Communication Cable Systems In,Stock,Indonesia
+CEKA.JK,Wilmar Cahaya Indonesia Tbk.,Stock,Indonesia
+CENT.JK,Centratama Telekomunikasi Indo,Stock,Indonesia
+CFIN.JK,Clipan Finance Indonesia Tbk.,Stock,Indonesia
+CGAS.JK,Citra Nusantara Gemilang Tbk.,Stock,Indonesia
+CHEM.JK,Chemstar Indonesia Tbk.,Stock,Indonesia
+CHIP.JK,Pelita Teknologi Global Tbk.,Stock,Indonesia
+CINT.JK,Chitose Internasional Tbk.,Stock,Indonesia
+CITA.JK,Cita Mineral Investindo Tbk.,Stock,Indonesia
+CITY.JK,Natura City Developments Tbk.,Stock,Indonesia
+CLAY.JK,Citra Putra Realty Tbk.,Stock,Indonesia
+CLEO.JK,Sariguna Primatirta Tbk.,Stock,Indonesia
+CLPI.JK,Colorpak Indonesia Tbk.,Stock,Indonesia
+CMNP.JK,Citra Marga Nusaphala Persada,Stock,Indonesia
+CMNT.JK,Cemindo Gemilang Tbk.,Stock,Indonesia
+CMPP.JK,AirAsia Indonesia Tbk.,Stock,Indonesia
+CMRY.JK,Cisarua Mountain Dairy Tbk.,Stock,Indonesia
+CNKO.JK,Exploitasi Energi Indonesia Tb,Stock,Indonesia
+CNMA.JK,Nusantara Sejahtera Raya Tbk.,Stock,Indonesia
+CNTX.JK,Century Textile Industry Tbk.,Stock,Indonesia
+COAL.JK,Black Diamond Resources Tbk.,Stock,Indonesia
+COCO.JK,Wahana Interfood Nusantara Tbk,Stock,Indonesia
+COWL.JK,Cowell Development Tbk.,Stock,Indonesia
+CPIN.JK,Charoen Pokphand Indonesia Tbk,Stock,Indonesia
+CPRI.JK,Capri Nusa Satu Properti Tbk.,Stock,Indonesia
+CPRO.JK,Central Proteina Prima Tbk.,Stock,Indonesia
+CRAB.JK,Toba Surimi Industries Tbk.,Stock,Indonesia
+CRSN.JK,Carsurin Tbk.,Stock,Indonesia
+CSAP.JK,Catur Sentosa Adiprana Tbk.,Stock,Indonesia
+CSIS.JK,Cahayasakti Investindo Sukses,Stock,Indonesia
+CSMI.JK,Cia Selera Murni Tbk.,Stock,Indonesia
+CSRA.JK,Cisadane Sawit Raya Tbk.,Stock,Indonesia
+CTBN.JK,Citra Tubindo Tbk.,Stock,Indonesia
+CTRA.JK,Ciputra Development Tbk.,Stock,Indonesia
+CTTH.JK,Citatah Tbk.,Stock,Indonesia
+CUAN.JK,Petrindo Jaya Kreasi Tbk.,Stock,Indonesia
+CYBR.JK,ITSEC Asia Tbk.,Stock,Indonesia
+DAAZ.JK,Daaz Bara Lestari Tbk.,Stock,Indonesia
+DADA.JK,Diamond Citra Propertindo Tbk.,Stock,Indonesia
+DART.JK,Duta Anggada Realty Tbk.,Stock,Indonesia
+DATA.JK,Remala Abadi Tbk.,Stock,Indonesia
+DAYA.JK,Duta Intidaya Tbk.,Stock,Indonesia
+DCII.JK,DCI Indonesia Tbk.,Stock,Indonesia
+DEAL.JK,Dewata Freightinternational Tb,Stock,Indonesia
+DEFI.JK,Danasupra Erapacific Tbk.,Stock,Indonesia
+DEPO.JK,Caturkarda Depo Bangunan Tbk.,Stock,Indonesia
+DEWA.JK,Darma Henwa Tbk,Stock,Indonesia
+DEWI.JK,Dewi Shri Farmindo Tbk.,Stock,Indonesia
+DFAM.JK,Dafam Property Indonesia Tbk.,Stock,Indonesia
+DGIK.JK,Nusa Konstruksi Enjiniring Tbk,Stock,Indonesia
+DGNS.JK,Diagnos Laboratorium Utama Tbk,Stock,Indonesia
+DIGI.JK,Arkadia Digital Media Tbk.,Stock,Indonesia
+DILD.JK,Intiland Development Tbk.,Stock,Indonesia
+DIVA.JK,Distribusi Voucher Nusantara T,Stock,Indonesia
+DKFT.JK,Central Omega Resources Tbk.,Stock,Indonesia
+DLTA.JK,Delta Djakarta Tbk.,Stock,Indonesia
+DMAS.JK,Puradelta Lestari Tbk.,Stock,Indonesia
+DMMX.JK,Digital Mediatama Maxima Tbk.,Stock,Indonesia
+DMND.JK,Diamond Food Indonesia Tbk.,Stock,Indonesia
+DNAR.JK,Bank Oke Indonesia Tbk.,Stock,Indonesia
+DNET.JK,Indoritel Makmur Internasional,Stock,Indonesia
+DOID.JK,Delta Dunia Makmur Tbk.,Stock,Indonesia
+DOOH.JK,Era Media Sejahtera Tbk.,Stock,Indonesia
+DOSS.JK,Global Sukses Digital Tbk.,Stock,Indonesia
+DPNS.JK,Duta Pertiwi Nusantara Tbk.,Stock,Indonesia
+DPUM.JK,Dua Putra Utama Makmur Tbk.,Stock,Indonesia
+DRMA.JK,Dharma Polimetal Tbk.,Stock,Indonesia
+DSFI.JK,Dharma Samudera Fishing Indust,Stock,Indonesia
+DSNG.JK,Dharma Satya Nusantara Tbk.,Stock,Indonesia
+DSSA.JK,Dian Swastatika Sentosa Tbk,Stock,Indonesia
+PTDU.JK,Djasa Ubersakti Tbk.,Stock,Indonesia
+DUCK.JK,Jaya Bersama Indo Tbk.,Stock,Indonesia
+DUTI.JK,Duta Pertiwi Tbk,Stock,Indonesia
+DVLA.JK,Darya-Varia Laboratoria Tbk.,Stock,Indonesia
+DWGL.JK,Dwi Guna Laksana Tbk.,Stock,Indonesia
+DYAN.JK,Dyandra Media International Tb,Stock,Indonesia
+EAST.JK,Eastparc Hotel Tbk.,Stock,Indonesia
+ECII.JK,Electronic City Indonesia Tbk.,Stock,Indonesia
+EDGE.JK,Indointernet Tbk.,Stock,Indonesia
+EKAD.JK,Ekadharma International Tbk.,Stock,Indonesia
+ELIT.JK,Data Sinergitama Jaya Tbk.,Stock,Indonesia
+ELPI.JK,Pelayaran Nasional Ekalya Purn,Stock,Indonesia
+ELSA.JK,Elnusa Tbk.,Stock,Indonesia
+ELTY.JK,Bakrieland Development Tbk.,Stock,Indonesia
+EMDE.JK,Megapolitan Developments Tbk.,Stock,Indonesia
+EMTK.JK,Elang Mahkota Teknologi Tbk.,Stock,Indonesia
+ENAK.JK,Champ Resto Indonesia Tbk.,Stock,Indonesia
+ENRG.JK,Energi Mega Persada Tbk.,Stock,Indonesia
+ENVY.JK,Envy Technologies Indonesia Tb,Stock,Indonesia
+ENZO.JK,Morenzo Abadi Perkasa Tbk.,Stock,Indonesia
+EPAC.JK,Megalestari Epack Sentosaraya,Stock,Indonesia
+EPMT.JK,Enseval Putera Megatrading Tbk,Stock,Indonesia
+ERAA.JK,Erajaya Swasembada Tbk.,Stock,Indonesia
+ERAL.JK,Sinar Eka Selaras Tbk.,Stock,Indonesia
+ERTX.JK,Eratex Djaja Tbk.,Stock,Indonesia
+ESIP.JK,Sinergi Inti Plastindo Tbk.,Stock,Indonesia
+ESSA.JK,ESSA Industries Indonesia Tbk.,Stock,Indonesia
+ESTA.JK,Esta Multi Usaha Tbk.,Stock,Indonesia
+ESTI.JK,Ever Shine Tex Tbk.,Stock,Indonesia
+ETWA.JK,Eterindo Wahanatama Tbk,Stock,Indonesia
+EURO.JK,Estee Gold Feet Tbk.,Stock,Indonesia
+EXCL.JK,XL Axiata Tbk.,Stock,Indonesia
+FAPA.JK,FAP Agri Tbk.,Stock,Indonesia
+FAST.JK,Fast Food Indonesia Tbk.,Stock,Indonesia
+FASW.JK,Fajar Surya Wisesa Tbk.,Stock,Indonesia
+FILM.JK,MD Entertainment Tbk.,Stock,Indonesia
+FIMP.JK,Fimperkasa Utama Tbk.,Stock,Indonesia
+FIRE.JK,Alfa Energi Investama Tbk.,Stock,Indonesia
+FISH.JK,FKS Multi Agro Tbk.,Stock,Indonesia
+FITT.JK,Hotel Fitra International Tbk.,Stock,Indonesia
+FLMC.JK,Falmaco Nonwoven Industri Tbk.,Stock,Indonesia
+FMII.JK,Fortune Mate Indonesia Tbk,Stock,Indonesia
+FOLK.JK,Multi Garam Utama Tbk.,Stock,Indonesia
+FOOD.JK,Sentra Food Indonesia Tbk.,Stock,Indonesia
+FORU.JK,Fortune Indonesia Tbk,Stock,Indonesia
+FORZ.JK,Forza Land Indonesia Tbk.,Stock,Indonesia
+FPNI.JK,Lotte Chemical Titan Tbk.,Stock,Indonesia
+FREN.JK,Smartfren Telecom Tbk.,Stock,Indonesia
+FUJI.JK,Fuji Finance Indonesia Tbk.,Stock,Indonesia
+FUTR.JK,Lini Imaji Kreasi Ekosistem Tb,Stock,Indonesia
+FWCT.JK,Wijaya Cahaya Timber Tbk.,Stock,Indonesia
+GAMA.JK,Aksara Global Development Tbk.,Stock,Indonesia
+GDST.JK,Gunawan Dianjaya Steel Tbk.,Stock,Indonesia
+GDYR.JK,Goodyear Indonesia Tbk.,Stock,Indonesia
+GEMA.JK,Gema Grahasarana Tbk.,Stock,Indonesia
+GEMS.JK,Golden Energy Mines Tbk.,Stock,Indonesia
+GGRM.JK,Gudang Garam Tbk.,Stock,Indonesia
+GGRP.JK,Gunung Raja Paksi Tbk.,Stock,Indonesia
+GHON.JK,Gihon Telekomunikasi Indonesia,Stock,Indonesia
+GIAA.JK,Garuda Indonesia (Persero) Tbk,Stock,Indonesia
+GJTL.JK,Gajah Tunggal Tbk.,Stock,Indonesia
+GLOB.JK,Globe Kita Terang Tbk.,Stock,Indonesia
+GLVA.JK,Galva Technologies Tbk.,Stock,Indonesia
+GMFI.JK,Garuda Maintenance Facility Ae,Stock,Indonesia
+GMTD.JK,Gowa Makassar Tourism Developm,Stock,Indonesia
+GOLD.JK,Visi Telekomunikasi Infrastruk,Stock,Indonesia
+GOLF.JK,Intra Golflink Resorts Tbk.,Stock,Indonesia
+GOLL.JK,Golden Plantation Tbk.,Stock,Indonesia
+GOOD.JK,Garudafood Putra Putri Jaya Tb,Stock,Indonesia
+GOTO.JK,GoTo Gojek Tokopedia Tbk.,Stock,Indonesia
+GPRA.JK,Perdana Gapuraprima Tbk.,Stock,Indonesia
+GPSO.JK,Geoprima Solusi Tbk.,Stock,Indonesia
+GRIA.JK,Ingria Pratama Capitalindo Tbk,Stock,Indonesia
+GRPH.JK,Griha Putra Persada Tbk.,Stock,Indonesia
+GRPM.JK,Graha Prima Mentari Tbk.,Stock,Indonesia
+GSMF.JK,Equity Development Investment,Stock,Indonesia
+GTBO.JK,Garda Tujuh Buana Tbk,Stock,Indonesia
+GTRA.JK,Grahaprima Suksesmandiri Tbk.,Stock,Indonesia
+GTSI.JK,GTS Internasional Tbk.,Stock,Indonesia
+GULA.JK,Aman Agrindo Tbk.,Stock,Indonesia
+GUNA.JK,Gunanusa Eramandiri Tbk.,Stock,Indonesia
+GWSA.JK,Greenwood Sejahtera Tbk.,Stock,Indonesia
+GZCO.JK,Gozco Plantations Tbk.,Stock,Indonesia
+HADE.JK,Himalaya Energi Perkasa Tbk.,Stock,Indonesia
+HAIS.JK,Hasnur Internasional Shipping,Stock,Indonesia
+HAJJ.JK,Arsy Buana Travelindo Tbk.,Stock,Indonesia
+HALO.JK,Haloni Jane Tbk.,Stock,Indonesia
+HATM.JK,Habco Trans Maritima Tbk.,Stock,Indonesia
+HBAT.JK,Minahasa Membangun Hebat Tbk.,Stock,Indonesia
+HDFA.JK,Radana Bhaskara Finance Tbk.,Stock,Indonesia
+HDIT.JK,Hensel Davest Indonesia Tbk.,Stock,Indonesia
+HDTX.JK,Panasia Indo Resources Tbk.,Stock,Indonesia
+HEAL.JK,Medikaloka Hermina Tbk.,Stock,Indonesia
+HELI.JK,Jaya Trishindo Tbk.,Stock,Indonesia
+HERO.JK,Hero Supermarket Tbk.,Stock,Indonesia
+HEXA.JK,Hexindo Adiperkasa Tbk.,Stock,Indonesia
+HILL.JK,Hillcon Tbk.,Stock,Indonesia
+HITS.JK,Humpuss Intermoda Transportasi,Stock,Indonesia
+HKMU.JK,HK Metals Utama Tbk.,Stock,Indonesia
+HMSP.JK,H.M. Sampoerna Tbk.,Stock,Indonesia
+HOKI.JK,Buyung Poetra Sembada Tbk.,Stock,Indonesia
+HOME.JK,Hotel Mandarine Regency Tbk.,Stock,Indonesia
+HOMI.JK,Grand House Mulia Tbk.,Stock,Indonesia
+HOPE.JK,Harapan Duta Pertiwi Tbk.,Stock,Indonesia
+HOTL.JK,Saraswati Griya Lestari Tbk.,Stock,Indonesia
+HRME.JK,Menteng Heritage Realty Tbk.,Stock,Indonesia
+HRTA.JK,Hartadinata Abadi Tbk.,Stock,Indonesia
+HRUM.JK,Harum Energy Tbk.,Stock,Indonesia
+HUMI.JK,Humpuss Maritim Internasional,Stock,Indonesia
+HYGN.JK,Ecocare Indo Pasifik Tbk.,Stock,Indonesia
+IATA.JK,MNC Energy Investments Tbk.,Stock,Indonesia
+IBFN.JK,Intan Baru Prana Tbk.,Stock,Indonesia
+IBOS.JK,Indo Boga Sukses Tbk.,Stock,Indonesia
+IBST.JK,Inti Bangun Sejahtera Tbk.,Stock,Indonesia
+ICBP.JK,Indofood CBP Sukses Makmur Tbk,Stock,Indonesia
+ICON.JK,Island Conces Indonesia Tbk.,Stock,Indonesia
+IDEA.JK,Idea Indonesia Akademi Tbk.,Stock,Indonesia
+IDPR.JK,Indonesia Pondasi Raya Tbk.,Stock,Indonesia
+IFII.JK,Indonesia Fibreboard Industry,Stock,Indonesia
+IFSH.JK,Ifishdeco Tbk.,Stock,Indonesia
+IGAR.JK,Champion Pacific Indonesia Tbk,Stock,Indonesia
+IIKP.JK,Inti Agri Resources Tbk,Stock,Indonesia
+IKAI.JK,Intikeramik Alamasri Industri,Stock,Indonesia
+IKAN.JK,Era Mandiri Cemerlang Tbk.,Stock,Indonesia
+IKBI.JK,Sumi Indo Kabel Tbk.,Stock,Indonesia
+IKPM.JK,Ikapharmindo Putramas Tbk.,Stock,Indonesia
+IMAS.JK,Indomobil Sukses Internasional,Stock,Indonesia
+IMJS.JK,Indomobil Multi Jasa Tbk.,Stock,Indonesia
+IMPC.JK,Impack Pratama Industri Tbk.,Stock,Indonesia
+INAF.JK,Indofarma Tbk.,Stock,Indonesia
+INAI.JK,Indal Aluminium Industry Tbk.,Stock,Indonesia
+INCF.JK,Indo Komoditi Korpora Tbk.,Stock,Indonesia
+INCI.JK,Intanwijaya Internasional Tbk,Stock,Indonesia
+INCO.JK,Vale Indonesia Tbk.,Stock,Indonesia
+INDF.JK,Indofood Sukses Makmur Tbk.,Stock,Indonesia
+INDO.JK,Royalindo Investa Wijaya Tbk.,Stock,Indonesia
+INDR.JK,Indo-Rama Synthetics Tbk.,Stock,Indonesia
+INDS.JK,Indospring Tbk.,Stock,Indonesia
+INDX.JK,Tanah Laut Tbk,Stock,Indonesia
+INDY.JK,Indika Energy Tbk.,Stock,Indonesia
+INET.JK,Sinergi Inti Andalan Prima Tbk,Stock,Indonesia
+INKP.JK,Indah Kiat Pulp & Paper Tbk.,Stock,Indonesia
+INOV.JK,Inocycle Technology Group Tbk.,Stock,Indonesia
+INPC.JK,Bank Artha Graha Internasional,Stock,Indonesia
+INPP.JK,Indonesian Paradise Property T,Stock,Indonesia
+INPS.JK,Indah Prakasa Sentosa Tbk.,Stock,Indonesia
+INRU.JK,Toba Pulp Lestari Tbk.,Stock,Indonesia
+INTA.JK,Intraco Penta Tbk.,Stock,Indonesia
+INTD.JK,Inter Delta Tbk,Stock,Indonesia
+INTP.JK,Indocement Tunggal Prakarsa Tb,Stock,Indonesia
+IOTF.JK,Sumber Sinergi Makmur Tbk.,Stock,Indonesia
+IPAC.JK,Era Graharealty Tbk.,Stock,Indonesia
+IPCC.JK,Indonesia Kendaraan Terminal T,Stock,Indonesia
+IPCM.JK,Jasa Armada Indonesia Tbk.,Stock,Indonesia
+IPOL.JK,Indopoly Swakarsa Industry Tbk,Stock,Indonesia
+IPPE.JK,Indo Pureco Pratama Tbk.,Stock,Indonesia
+IRRA.JK,Itama Ranoraya Tbk.,Stock,Indonesia
+IRSX.JK,Aviana Sinar Abadi Tbk.,Stock,Indonesia
+PTIS.JK,Indo Straits Tbk.,Stock,Indonesia
+ISAP.JK,Isra Presisi Indonesia Tbk.,Stock,Indonesia
+ISAT.JK,Indosat Tbk.,Stock,Indonesia
+ISEA.JK,Indo American Seafoods Tbk.,Stock,Indonesia
+ISSP.JK,Steel Pipe Industry of Indones,Stock,Indonesia
+ITIC.JK,Indonesian Tobacco Tbk.,Stock,Indonesia
+ITMA.JK,Sumber Energi Andalan Tbk.,Stock,Indonesia
+ITMG.JK,Indo Tambangraya Megah Tbk.,Stock,Indonesia
+IPTV.JK,MNC Vision Networks Tbk.,Stock,Indonesia
+JARR.JK,Jhonlin Agro Raya Tbk.,Stock,Indonesia
+JAST.JK,Jasnita Telekomindo Tbk.,Stock,Indonesia
+JATI.JK,Informasi Teknologi Indonesia,Stock,Indonesia
+JAWA.JK,Jaya Agra Wattie Tbk.,Stock,Indonesia
+JAYA.JK,Armada Berjaya Trans Tbk.,Stock,Indonesia
+JECC.JK,Jembo Cable Company Tbk.,Stock,Indonesia
+JGLE.JK,Graha Andrasentra Propertindo,Stock,Indonesia
+JIHD.JK,Jakarta International Hotels &,Stock,Indonesia
+JKON.JK,Jaya Konstruksi Manggala Prata,Stock,Indonesia
+JKSW.JK,Jakarta Kyoei Steel Works Tbk.,Stock,Indonesia
+JMAS.JK,Asuransi Jiwa Syariah Jasa Mit,Stock,Indonesia
+JPFA.JK,Japfa Comfeed Indonesia Tbk.,Stock,Indonesia
+JRPT.JK,Jaya Real Property Tbk.,Stock,Indonesia
+JSPT.JK,Jakarta Setiabudi Internasiona,Stock,Indonesia
+JSKY.JK,Sky Energy Indonesia Tbk.,Stock,Indonesia
+JSMR.JK,Jasa Marga (Persero) Tbk.,Stock,Indonesia
+JTPE.JK,Jasuindo Tiga Perkasa Tbk.,Stock,Indonesia
+KAEF.JK,Kimia Farma Tbk.,Stock,Indonesia
+KARW.JK,Meratus Jasa Prima Tbk.,Stock,Indonesia
+KAYU.JK,Darmi Bersaudara Tbk.,Stock,Indonesia
+KBAG.JK,Karya Bersama Anugerah Tbk.,Stock,Indonesia
+KBLI.JK,KMI Wire & Cable Tbk.,Stock,Indonesia
+KBLM.JK,Kabelindo Murni Tbk.,Stock,Indonesia
+KBLV.JK,First Media Tbk.,Stock,Indonesia
+KBRI.JK,Kertas Basuki Rachmat Indonesi,Stock,Indonesia
+KDSI.JK,Kedawung Setia Industrial Tbk.,Stock,Indonesia
+KDTN.JK,Puri Sentul Permai Tbk.,Stock,Indonesia
+KEEN.JK,Kencana Energi Lestari Tbk.,Stock,Indonesia
+KEJU.JK,Mulia Boga Raya Tbk.,Stock,Indonesia
+KETR.JK,Ketrosden Triasmitra Tbk.,Stock,Indonesia
+KIAS.JK,Keramika Indonesia Assosiasi T,Stock,Indonesia
+KICI.JK,Kedaung Indah Can Tbk,Stock,Indonesia
+KIJA.JK,Kawasan Industri Jababeka Tbk.,Stock,Indonesia
+KING.JK,Hoffmen Cleanindo Tbk.,Stock,Indonesia
+KINO.JK,Kino Indonesia Tbk.,Stock,Indonesia
+KIOS.JK,Kioson Komersial Indonesia Tbk,Stock,Indonesia
+KJEN.JK,Krida Jaringan Nusantara Tbk.,Stock,Indonesia
+KKES.JK,Kusuma Kemindo Sentosa Tbk.,Stock,Indonesia
+KKGI.JK,Resource Alam Indonesia Tbk.,Stock,Indonesia
+KLAS.JK,Pelayaran Kurnia Lautan Semest,Stock,Indonesia
+KLBF.JK,Kalbe Farma Tbk.,Stock,Indonesia
+KLIN.JK,Klinko Karya Imaji Tbk.,Stock,Indonesia
+KMDS.JK,Kurniamitra Duta Sentosa Tbk.,Stock,Indonesia
+KMTR.JK,Kirana Megatara Tbk.,Stock,Indonesia
+KOBX.JK,Kobexindo Tractors Tbk.,Stock,Indonesia
+KOCI.JK,Kokoh Exa Nusantara Tbk.,Stock,Indonesia
+KOIN.JK,Kokoh Inti Arebama Tbk,Stock,Indonesia
+KOKA.JK,Koka Indonesia Tbk.,Stock,Indonesia
+KONI.JK,Perdana Bangun Pusaka Tbk,Stock,Indonesia
+KOPI.JK,Mitra Energi Persada Tbk.,Stock,Indonesia
+KOTA.JK,DMS Propertindo Tbk.,Stock,Indonesia
+KPAL.JK,Steadfast Marine Tbk.,Stock,Indonesia
+KPAS.JK,Cottonindo Ariesta Tbk.,Stock,Indonesia
+KPIG.JK,MNC Land Tbk.,Stock,Indonesia
+KRAH.JK,Grand Kartech Tbk.,Stock,Indonesia
+KRAS.JK,Krakatau Steel (Persero) Tbk.,Stock,Indonesia
+KREN.JK,Quantum Clovera Investama Tbk.,Stock,Indonesia
+KRYA.JK,Bangun Karya Perkasa Jaya Tbk.,Stock,Indonesia
+KUAS.JK,Ace Oldfields Tbk.,Stock,Indonesia
+LABA.JK,Green Power Group Tbk.,Stock,Indonesia
+LABS.JK,UBC Medical Indonesia Tbk.,Stock,Indonesia
+LAJU.JK,Jasa Berdikari Logistics Tbk.,Stock,Indonesia
+LAND.JK,Trimitra Propertindo Tbk.,Stock,Indonesia
+LAPD.JK,Leyand International Tbk.,Stock,Indonesia
+LCGP.JK,Eureka Prima Jakarta Tbk.,Stock,Indonesia
+LCKM.JK,LCK Global Kedaton Tbk.,Stock,Indonesia
+LEAD.JK,Logindo Samudramakmur Tbk.,Stock,Indonesia
+LFLO.JK,Imago Mulia Persada Tbk.,Stock,Indonesia
+LIFE.JK,MSIG Life Insurance Indonesia,Stock,Indonesia
+LINK.JK,Link Net Tbk.,Stock,Indonesia
+LION.JK,Lion Metal Works Tbk.,Stock,Indonesia
+LIVE.JK,Homeco Victoria Makmur Tbk.,Stock,Indonesia
+LMAS.JK,Limas Indonesia Makmur Tbk,Stock,Indonesia
+LMAX.JK,Lupromax Pelumas Indonesia Tbk,Stock,Indonesia
+LMPI.JK,Langgeng Makmur Industri Tbk.,Stock,Indonesia
+LMSH.JK,Lionmesh Prima Tbk.,Stock,Indonesia
+LOPI.JK,Logisticsplus International Tb,Stock,Indonesia
+LPCK.JK,Lippo Cikarang Tbk,Stock,Indonesia
+LPGI.JK,Lippo General Insurance Tbk.,Stock,Indonesia
+LPIN.JK,Multi Prima Sejahtera Tbk,Stock,Indonesia
+LPKR.JK,Lippo Karawaci Tbk.,Stock,Indonesia
+LPLI.JK,Star Pacific Tbk,Stock,Indonesia
+LPPF.JK,Matahari Department Store Tbk.,Stock,Indonesia
+LPPS.JK,Lenox Pasifik Investama Tbk.,Stock,Indonesia
+LRNA.JK,Eka Sari Lorena Transport Tbk.,Stock,Indonesia
+LSIP.JK,PP London Sumatra Indonesia Tb,Stock,Indonesia
+LTLS.JK,Lautan Luas Tbk.,Stock,Indonesia
+LUCK.JK,Sentral Mitra Informatika Tbk.,Stock,Indonesia
+LUCY.JK,Lima Dua Lima Tiga Tbk.,Stock,Indonesia
+MABA.JK,Marga Abhinaya Abadi Tbk.,Stock,Indonesia
+MAGP.JK,Multi Agro Gemilang Plantation,Stock,Indonesia
+MAHA.JK,Mandiri Herindo Adiperkasa Tbk,Stock,Indonesia
+MAIN.JK,Malindo Feedmill Tbk.,Stock,Indonesia
+MAMI.JK,Mas Murni Indonesia Tbk,Stock,Indonesia
+MANG.JK,Manggung Polahraya Tbk.,Stock,Indonesia
+MAPA.JK,Map Aktif Adiperkasa Tbk.,Stock,Indonesia
+MAPB.JK,MAP Boga Adiperkasa Tbk.,Stock,Indonesia
+MAPI.JK,Mitra Adiperkasa Tbk.,Stock,Indonesia
+MARI.JK,Mahaka Radio Integra Tbk.,Stock,Indonesia
+MARK.JK,Mark Dynamics Indonesia Tbk.,Stock,Indonesia
+MASA.JK,Multistrada Arah Sarana Tbk.,Stock,Indonesia
+MASB.JK,Bank Multiarta Sentosa Tbk.,Stock,Indonesia
+MAXI.JK,Maxindo Karya Anugerah Tbk.,Stock,Indonesia
+MAYA.JK,Bank Mayapada Internasional Tb,Stock,Indonesia
+MBAP.JK,Mitrabara Adiperdana Tbk.,Stock,Indonesia
+MBMA.JK,Merdeka Battery Materials Tbk.,Stock,Indonesia
+MBSS.JK,Mitrabahtera Segara Sejati Tbk,Stock,Indonesia
+MBTO.JK,Martina Berto Tbk.,Stock,Indonesia
+MCAS.JK,M Cash Integrasi Tbk.,Stock,Indonesia
+MCOL.JK,Prima Andalan Mandiri Tbk.,Stock,Indonesia
+MCOR.JK,Bank China Construction Bank I,Stock,Indonesia
+MDIA.JK,Intermedia Capital Tbk.,Stock,Indonesia
+MDKA.JK,Merdeka Copper Gold Tbk.,Stock,Indonesia
+MDKI.JK,Emdeki Utama Tbk.,Stock,Indonesia
+MDLN.JK,Modernland Realty Tbk.,Stock,Indonesia
+MDRN.JK,Modern Internasional Tbk.,Stock,Indonesia
+MEDC.JK,Medco Energi Internasional Tbk,Stock,Indonesia
+MEDS.JK,Hetzer Medical Indonesia Tbk.,Stock,Indonesia
+MEGA.JK,Bank Mega Tbk.,Stock,Indonesia
+MEJA.JK,Harta Djaya Karya Tbk.,Stock,Indonesia
+MENN.JK,Menn Teknologi Indonesia Tbk.,Stock,Indonesia
+MERK.JK,Merck Tbk.,Stock,Indonesia
+META.JK,Nusantara Infrastructure Tbk.,Stock,Indonesia
+MFIN.JK,Mandala Multifinance Tbk.,Stock,Indonesia
+MFMI.JK,Multifiling Mitra Indonesia Tb,Stock,Indonesia
+MGLV.JK,Panca Anugrah Wisesa Tbk.,Stock,Indonesia
+MGNA.JK,Magna Investama Mandiri Tbk.,Stock,Indonesia
+MGRO.JK,Mahkota Group Tbk.,Stock,Indonesia
+MHKI.JK,Multi Hanna Kreasindo Tbk.,Stock,Indonesia
+MICE.JK,Multi Indocitra Tbk.,Stock,Indonesia
+MIDI.JK,Midi Utama Indonesia Tbk.,Stock,Indonesia
+MIKA.JK,Mitra Keluarga Karyasehat Tbk.,Stock,Indonesia
+MINA.JK,Sanurhasta Mitra Tbk.,Stock,Indonesia
+MIRA.JK,Mitra International Resources,Stock,Indonesia
+MITI.JK,Mitra Investindo Tbk.,Stock,Indonesia
+MKAP.JK,Multikarya Asia Pasifik Raya T,Stock,Indonesia
+MKNT.JK,Mitra Komunikasi Nusantara Tbk,Stock,Indonesia
+MKPI.JK,Metropolitan Kentjana Tbk.,Stock,Indonesia
+MKTR.JK,Menthobi Karyatama Raya Tbk.,Stock,Indonesia
+MLPT.JK,Multipolar Technology Tbk.,Stock,Indonesia
+MLBI.JK,Multi Bintang Indonesia Tbk.,Stock,Indonesia
+MLIA.JK,Mulia Industrindo Tbk,Stock,Indonesia
+MLPL.JK,Multipolar Tbk.,Stock,Indonesia
+MMIX.JK,Multi Medika Internasional Tbk,Stock,Indonesia
+MMLP.JK,Mega Manunggal Property Tbk.,Stock,Indonesia
+MNCN.JK,Media Nusantara Citra Tbk.,Stock,Indonesia
+MOLI.JK,Madusari Murni Indah Tbk.,Stock,Indonesia
+MORA.JK,Mora Telematika Indonesia Tbk.,Stock,Indonesia
+PTMP.JK,Mitra Pack Tbk.,Stock,Indonesia
+MPIX.JK,Mitra Pedagang Indonesia Tbk.,Stock,Indonesia
+MPMX.JK,Mitra Pinasthika Mustika Tbk.,Stock,Indonesia
+MPOW.JK,Megapower Makmur Tbk.,Stock,Indonesia
+MPPA.JK,Matahari Putra Prima Tbk.,Stock,Indonesia
+MPRO.JK,Maha Properti Indonesia Tbk.,Stock,Indonesia
+MPXL.JK,MPX Logistics International Tb,Stock,Indonesia
+PTMR.JK,Master Print Tbk.,Stock,Indonesia
+MRAT.JK,Mustika Ratu Tbk.,Stock,Indonesia
+MREI.JK,Maskapai Reasuransi Indonesia,Stock,Indonesia
+MSIE.JK,Multisarana Intan Eduka Tbk.,Stock,Indonesia
+MSIN.JK,MNC Digital Entertainment Tbk.,Stock,Indonesia
+MSJA.JK,Multi Spunindo Jaya Tbk.,Stock,Indonesia
+MSKY.JK,MNC Sky Vision Tbk.,Stock,Indonesia
+MSTI.JK,Mastersystem Infotama Tbk.,Stock,Indonesia
+MTDL.JK,Metrodata Electronics Tbk.,Stock,Indonesia
+MTEL.JK,Dayamitra Telekomunikasi Tbk.,Stock,Indonesia
+MTFN.JK,Capitalinc Investment Tbk.,Stock,Indonesia
+MTLA.JK,Metropolitan Land Tbk.,Stock,Indonesia
+MTMH.JK,Murni Sadar Tbk.,Stock,Indonesia
+MTPS.JK,Meta Epsi Tbk.,Stock,Indonesia
+MTRA.JK,Mitra Pemuda Tbk.,Stock,Indonesia
+MTSM.JK,Metro Realty Tbk.,Stock,Indonesia
+MTWI.JK,Malacca Trust Wuwungan Insuran,Stock,Indonesia
+MUTU.JK,Mutuagung Lestari Tbk.,Stock,Indonesia
+MYOH.JK,Samindo Resources Tbk.,Stock,Indonesia
+MYOR.JK,Mayora Indah Tbk.,Stock,Indonesia
+MYRX.JK,Hanson International Tbk.,Stock,Indonesia
+MYTX.JK,Asia Pacific Investama Tbk.,Stock,Indonesia
+NAIK.JK,Adiwarna Anugerah Abadi Tbk.,Stock,Indonesia
+NANO.JK,Nanotech Indonesia Global Tbk.,Stock,Indonesia
+NASA.JK,Andalan Perkasa Abadi Tbk.,Stock,Indonesia
+NASI.JK,Wahana Inti Makmur Tbk.,Stock,Indonesia
+NATO.JK,Surya Permata Andalan Tbk.,Stock,Indonesia
+NAYZ.JK,Hassana Boga Sejahtera Tbk.,Stock,Indonesia
+NCKL.JK,Trimegah Bangun Persada Tbk.,Stock,Indonesia
+NELY.JK,Pelayaran Nelly Dwi Putri Tbk.,Stock,Indonesia
+NEST.JK,Esta Indonesia Tbk.,Stock,Indonesia
+NETV.JK,Net Visi Media Tbk.,Stock,Indonesia
+NFCX.JK,NFC Indonesia Tbk.,Stock,Indonesia
+NICE.JK,Adhi Kartiko Pratama Tbk.,Stock,Indonesia
+NICK.JK,Charnic Capital Tbk.,Stock,Indonesia
+NICL.JK,PAM Mineral Tbk.,Stock,Indonesia
+NIKL.JK,Pelat Timah Nusantara Tbk.,Stock,Indonesia
+NINE.JK,Techno9 Indonesia Tbk.,Stock,Indonesia
+NIPS.JK,Nipress Tbk.,Stock,Indonesia
+NIRO.JK,City Retail Developments Tbk.,Stock,Indonesia
+NISP.JK,Bank OCBC NISP Tbk.,Stock,Indonesia
+NOBU.JK,Bank Nationalnobu Tbk.,Stock,Indonesia
+NPGF.JK,Nusa Palapa Gemilang Tbk.,Stock,Indonesia
+NRCA.JK,Nusa Raya Cia Tbk.,Stock,Indonesia
+NSSS.JK,Nusantara Sawit Sejahtera Tbk.,Stock,Indonesia
+NTBK.JK,Nusatama Berkah Tbk.,Stock,Indonesia
+NUSA.JK,Sinergi Megah Internusa Tbk.,Stock,Indonesia
+NZIA.JK,Nusantara Almazia Tbk.,Stock,Indonesia
+OASA.JK,Maharaksa Biru Energi Tbk.,Stock,Indonesia
+OBMD.JK,OBM Drilchem Tbk.,Stock,Indonesia
+OCAP.JK,Onix Capital Tbk.,Stock,Indonesia
+OILS.JK,Indo Oil Perkasa Tbk.,Stock,Indonesia
+OKAS.JK,Ancora Indonesia Resources Tbk,Stock,Indonesia
+OLIV.JK,Oscar Mitra Sukses Sejahtera T,Stock,Indonesia
+OMED.JK,Jayamas Medica Industri Tbk.,Stock,Indonesia
+OMRE.JK,Indonesia Prima Property Tbk,Stock,Indonesia
+OPMS.JK,Oima Prima Metal Sinergi Tbk,Stock,Indonesia
+PACK.JK,Solusi Kemasan Digital Tbk.,Stock,Indonesia
+PADA.JK,Personel Alih Daya Tbk.,Stock,Indonesia
+PADI.JK,Minna Padi Investama Sekuritas,Stock,Indonesia
+PALM.JK,Provident Investasi Bersama Tb,Stock,Indonesia
+PAMG.JK,Bima Sakti Pertiwi Tbk.,Stock,Indonesia
+PANI.JK,Pantai Indah Kapuk Dua Tbk.,Stock,Indonesia
+PANR.JK,Panorama Sentrawisata Tbk.,Stock,Indonesia
+PANS.JK,Panin Sekuritas Tbk.,Stock,Indonesia
+PART.JK,Cipta Perdana Lancar Tbk.,Stock,Indonesia
+PBID.JK,Panca Budi Idaman Tbk.,Stock,Indonesia
+PBRX.JK,Pan Brothers Tbk.,Stock,Indonesia
+PBSA.JK,Paramita Bangun Sarana Tbk.,Stock,Indonesia
+PCAR.JK,Prima Cakrawala Abadi Tbk.,Stock,Indonesia
+PDES.JK,Destinasi Tirta Nusantara Tbk,Stock,Indonesia
+PDPP.JK,Primadaya Plastisindo Tbk.,Stock,Indonesia
+PEGE.JK,Panca Global Kapital Tbk.,Stock,Indonesia
+PEHA.JK,Phapros Tbk.,Stock,Indonesia
+PEVE.JK,Penta Valent Tbk.,Stock,Indonesia
+PGAS.JK,Perusahaan Gas Negara Tbk.,Stock,Indonesia
+PGEO.JK,Pertamina Geothermal Energy Tb,Stock,Indonesia
+PGJO.JK,Tourindo Guide Indonesia Tbk.,Stock,Indonesia
+PGLI.JK,Pembangunan Graha Lestari Inda,Stock,Indonesia
+PGUN.JK,Pradiksi Gunatama Tbk.,Stock,Indonesia
+PICO.JK,Pelangi Indah Canindo Tbk,Stock,Indonesia
+PIPA.JK,Multi Makmur Lemindo Tbk.,Stock,Indonesia
+PJAA.JK,Pembangunan Jaya Ancol Tbk.,Stock,Indonesia
+PKPK.JK,Perdana Karya Perkasa Tbk,Stock,Indonesia
+PLAN.JK,Planet Properindo Jaya Tbk.,Stock,Indonesia
+PLAS.JK,Polaris Investama Tbk,Stock,Indonesia
+PLIN.JK,Plaza Indonesia Realty Tbk.,Stock,Indonesia
+PMJS.JK,Putra Mandiri Jembar Tbk.,Stock,Indonesia
+PMMP.JK,Panca Mitra Multiperdana Tbk.,Stock,Indonesia
+PNBN.JK,Bank Pan Indonesia Tbk,Stock,Indonesia
+PNBS.JK,Bank Panin Dubai Syariah Tbk.,Stock,Indonesia
+PNGO.JK,Pinago Utama Tbk.,Stock,Indonesia
+PNIN.JK,Paninvest Tbk.,Stock,Indonesia
+PNLF.JK,Panin Financial Tbk.,Stock,Indonesia
+PNSE.JK,Pudjiadi & Sons Tbk.,Stock,Indonesia
+POLA.JK,Pool Advista Finance Tbk.,Stock,Indonesia
+POLI.JK,Pollux Hotels Group Tbk.,Stock,Indonesia
+POLL.JK,Pollux Properties Indonesia Tb,Stock,Indonesia
+POLU.JK,Golden Flower Tbk.,Stock,Indonesia
+POLY.JK,Asia Pacific Fibers Tbk,Stock,Indonesia
+POOL.JK,Pool Advista Indonesia Tbk.,Stock,Indonesia
+PORT.JK,Nusantara Pelabuhan Handal Tbk,Stock,Indonesia
+POSA.JK,Bliss Properti Indonesia Tbk.,Stock,Indonesia
+POWR.JK,Cikarang Listrindo Tbk.,Stock,Indonesia
+PTPP.JK,PP (Persero) Tbk.,Stock,Indonesia
+PPGL.JK,Prima Globalindo Logistik Tbk.,Stock,Indonesia
+PPRE.JK,PP Presisi Tbk.,Stock,Indonesia
+PPRI.JK,Paperocks Indonesia Tbk.,Stock,Indonesia
+PPRO.JK,PP Properti Tbk.,Stock,Indonesia
+PRAS.JK,Prima Alloy Steel Universal Tb,Stock,Indonesia
+PRAY.JK,Famon Awal Bros Sedaya Tbk.,Stock,Indonesia
+PRDA.JK,Prodia Widyahusada Tbk.,Stock,Indonesia
+PRIM.JK,Royal Prima Tbk.,Stock,Indonesia
+PTPS.JK,Pulau Subur Tbk.,Stock,Indonesia
+PSAB.JK,J Resources Asia Pasifik Tbk.,Stock,Indonesia
+PSDN.JK,Prasidha Aneka Niaga Tbk,Stock,Indonesia
+PSGO.JK,Palma Serasih Tbk.,Stock,Indonesia
+PSKT.JK,Red Planet Indonesia Tbk.,Stock,Indonesia
+PSSI.JK,IMC Pelita Logistik Tbk.,Stock,Indonesia
+PUDP.JK,Pudjiadi Prestige Tbk.,Stock,Indonesia
+PURA.JK,Putra Rajawali Kencana Tbk.,Stock,Indonesia
+PURE.JK,Trinitan Metals and Minerals T,Stock,Indonesia
+PURI.JK,Puri Global Sukses Tbk.,Stock,Indonesia
+PTPW.JK,Pratama Widya Tbk.,Stock,Indonesia
+PWON.JK,Pakuwon Jati Tbk.,Stock,Indonesia
+PYFA.JK,Pyridam Farma Tbk,Stock,Indonesia
+PZZA.JK,Sarimelati Kencana Tbk.,Stock,Indonesia
+RAAM.JK,Tripar Multivision Plus Tbk.,Stock,Indonesia
+RAFI.JK,Sari Kreasi Boga Tbk.,Stock,Indonesia
+RAJA.JK,Rukun Raharja Tbk.,Stock,Indonesia
+RALS.JK,Ramayana Lestari Sentosa Tbk.,Stock,Indonesia
+RANC.JK,Supra Boga Lestari Tbk.,Stock,Indonesia
+RBMS.JK,Ristia Bintang Mahkotasejati T,Stock,Indonesia
+RCCC.JK,Utama Radar Cahaya Tbk.,Stock,Indonesia
+RDTX.JK,Roda Vivatex Tbk,Stock,Indonesia
+REAL.JK,Repower Asia Indonesia Tbk.,Stock,Indonesia
+RELF.JK,Graha Mitra Asia Tbk.,Stock,Indonesia
+RELI.JK,Reliance Sekuritas Indonesia T,Stock,Indonesia
+RGAS.JK,Kian Santang Muliatama Tbk.,Stock,Indonesia
+RICY.JK,Ricky Putra Globalindo Tbk,Stock,Indonesia
+RIGS.JK,Rig Tenders Indonesia Tbk.,Stock,Indonesia
+RIMO.JK,Rimo International Lestari Tbk,Stock,Indonesia
+RISE.JK,Jaya Sukses Makmur Sentosa Tbk,Stock,Indonesia
+RMKE.JK,RMK Energy Tbk.,Stock,Indonesia
+RMKO.JK,Royaltama Mulia Kontraktorindo,Stock,Indonesia
+PTRO.JK,Petrosea Tbk.,Stock,Indonesia
+ROCK.JK,Rockfields Properti Indonesia,Stock,Indonesia
+RODA.JK,Pikko Land Development Tbk.,Stock,Indonesia
+RONY.JK,Aesler Grup Internasional Tbk.,Stock,Indonesia
+ROTI.JK,Nippon Indosari Corpindo Tbk.,Stock,Indonesia
+RSCH.JK,Charlie Hospital Semarang Tbk.,Stock,Indonesia
+RSGK.JK,Kedoya Adyaraya Tbk.,Stock,Indonesia
+RUIS.JK,Radiant Utama Interinsco Tbk.,Stock,Indonesia
+RUNS.JK,Global Sukses Solusi Tbk.,Stock,Indonesia
+SAFE.JK,Steady Safe Tbk,Stock,Indonesia
+SAGE.JK,Saausaha Gemilangindah Tbk.,Stock,Indonesia
+SAME.JK,Sarana Meditama Metropolitan T,Stock,Indonesia
+SAMF.JK,Saraswanti Anugerah Makmur Tbk,Stock,Indonesia
+SAPX.JK,Satria Antaran Prima Tbk.,Stock,Indonesia
+SATU.JK,Kota Satu Properti Tbk.,Stock,Indonesia
+SBAT.JK,Sejahtera Bintang Abadi Textil,Stock,Indonesia
+SBMA.JK,Surya Biru Murni Acetylene Tbk,Stock,Indonesia
+SCCO.JK,Supreme Cable Manufacturing &,Stock,Indonesia
+SCMA.JK,Surya Citra Media Tbk.,Stock,Indonesia
+SCNP.JK,Selaras Citra Nusantara Perkas,Stock,Indonesia
+SCPI.JK,Organon Pharma Indonesia Tbk.,Stock,Indonesia
+SDMU.JK,Sidomulyo Selaras Tbk.,Stock,Indonesia
+SDPC.JK,Millennium Pharmacon Internati,Stock,Indonesia
+SDRA.JK,Bank Woori Saudara Indonesia 1,Stock,Indonesia
+SEMA.JK,Semacom Integrated Tbk.,Stock,Indonesia
+SFAN.JK,Surya Fajar Capital Tbk.,Stock,Indonesia
+SGER.JK,Sumber Global Energy Tbk.,Stock,Indonesia
+SGRO.JK,Sampoerna Agro Tbk.,Stock,Indonesia
+SHID.JK,Hotel Sahid Jaya International,Stock,Indonesia
+SHIP.JK,Sillo Maritime Perdana Tbk.,Stock,Indonesia
+SICO.JK,Sigma Energy Compressindo Tbk.,Stock,Indonesia
+SIDO.JK,Industri Jamu dan Farmasi Sido,Stock,Indonesia
+SILO.JK,Siloam International Hospitals,Stock,Indonesia
+SIMA.JK,Siwani Makmur Tbk,Stock,Indonesia
+SIMP.JK,Salim Ivomas Pratama Tbk.,Stock,Indonesia
+SINI.JK,Singaraja Putra Tbk.,Stock,Indonesia
+SIPD.JK,Sreeya Sewu Indonesia Tbk.,Stock,Indonesia
+SKBM.JK,Sekar Bumi Tbk.,Stock,Indonesia
+SKLT.JK,Sekar Laut Tbk.,Stock,Indonesia
+SKRN.JK,Superkrane Mitra Utama Tbk.,Stock,Indonesia
+SKYB.JK,Northcliff Citranusa Indonesia,Stock,Indonesia
+SLIS.JK,Gaya Abadi Sempurna Tbk.,Stock,Indonesia
+SMAR.JK,Smart Tbk.,Stock,Indonesia
+SMBR.JK,Semen Baturaja Tbk.,Stock,Indonesia
+SMCB.JK,Solusi Bangun Indonesia Tbk.,Stock,Indonesia
+SMDM.JK,Suryamas Dutamakmur Tbk.,Stock,Indonesia
+SMDR.JK,Samudera Indonesia Tbk.,Stock,Indonesia
+SMGA.JK,Sumber Mineral Global Abadi Tb,Stock,Indonesia
+SMGR.JK,Semen Indonesia (Persero) Tbk.,Stock,Indonesia
+SMIL.JK,Sarana Mitra Luas Tbk.,Stock,Indonesia
+SMKL.JK,Satyamitra Kemas Lestari Tbk.,Stock,Indonesia
+SMKM.JK,Sumber Mas Konstruksi Tbk.,Stock,Indonesia
+SMLE.JK,Sinergi Multi Lestarindo Tbk.,Stock,Indonesia
+SMMA.JK,Sinarmas Multiartha Tbk.,Stock,Indonesia
+SMMT.JK,Golden Eagle Energy Tbk.,Stock,Indonesia
+SMRA.JK,Summarecon Agung Tbk.,Stock,Indonesia
+SMRU.JK,SMR Utama Tbk.,Stock,Indonesia
+SMSM.JK,Selamat Sempurna Tbk.,Stock,Indonesia
+PTSN.JK,Sat Nusapersada Tbk,Stock,Indonesia
+SNLK.JK,Sunter Lakeside Hotel Tbk.,Stock,Indonesia
+SPTO.JK,Surya Pertiwi Tbk.,Stock,Indonesia
+SOCI.JK,Soechi Lines Tbk.,Stock,Indonesia
+SOFA.JK,Boston Furniture Industries Tb,Stock,Indonesia
+SOHO.JK,Soho Global Health Tbk.,Stock,Indonesia
+SOLA.JK,Xolare RCR Energy Tbk.,Stock,Indonesia
+SONA.JK,Sona Topas Tourism Industry Tb,Stock,Indonesia
+SOSS.JK,Shield On Service Tbk.,Stock,Indonesia
+SOTS.JK,Satria Mega Kencana Tbk.,Stock,Indonesia
+SOUL.JK,Mitra Tirta Buwana Tbk.,Stock,Indonesia
+PTSP.JK,Pioneerindo Gourmet Internatio,Stock,Indonesia
+SPMA.JK,Suparma Tbk.,Stock,Indonesia
+SPRE.JK,Soraya Berjaya Indonesia Tbk.,Stock,Indonesia
+SQMI.JK,Wilton Makmur Indonesia Tbk.,Stock,Indonesia
+SRAJ.JK,Sejahteraraya Anugrahjaya Tbk.,Stock,Indonesia
+SRIL.JK,Sri Rejeki Isman Tbk.,Stock,Indonesia
+SRSN.JK,Indo Acidatama Tbk,Stock,Indonesia
+SRTG.JK,Saratoga Investama Sedaya Tbk.,Stock,Indonesia
+SSIA.JK,Surya Semesta Internusa Tbk.,Stock,Indonesia
+SSMS.JK,Sawit Sumbermas Sarana Tbk.,Stock,Indonesia
+SSTM.JK,Sunson Textile Manufacture Tbk,Stock,Indonesia
+STAA.JK,Sumber Tani Agung Resources Tb,Stock,Indonesia
+STAR.JK,Buana Artha Anugerah Tbk.,Stock,Indonesia
+STRK.JK,Lovina Beach Brewery Tbk.,Stock,Indonesia
+STTP.JK,Siantar Top Tbk.,Stock,Indonesia
+SUGI.JK,Sugih Energy Tbk.,Stock,Indonesia
+SULI.JK,SLJ Global Tbk.,Stock,Indonesia
+SUNI.JK,Sunindo Pratama Tbk.,Stock,Indonesia
+SUPR.JK,Solusi Tunas Pratama Tbk.,Stock,Indonesia
+SURE.JK,Super Energy Tbk.,Stock,Indonesia
+SURI.JK,Maja Agung Latexindo Tbk.,Stock,Indonesia
+SWAT.JK,Sriwahana Adityakarta Tbk.,Stock,Indonesia
+SWID.JK,Saraswanti Indoland Developmen,Stock,Indonesia
+TALF.JK,Tunas Alfin Tbk.,Stock,Indonesia
+TAMA.JK,Lancartama Sejati Tbk.,Stock,Indonesia
+TAMU.JK,Pelayaran Tamarin Samudra Tbk.,Stock,Indonesia
+TAPG.JK,Triputra Agro Persada Tbk.,Stock,Indonesia
+TARA.JK,Agung Semesta Sejahtera Tbk.,Stock,Indonesia
+TAXI.JK,Express Transindo Utama Tbk.,Stock,Indonesia
+TAYS.JK,Jaya Swarasa Agung Tbk.,Stock,Indonesia
+TBIG.JK,Tower Bersama Infrastructure T,Stock,Indonesia
+TBLA.JK,Tunas Baru Lampung Tbk.,Stock,Indonesia
+TBMS.JK,Tembaga Mulia Semanan Tbk.,Stock,Indonesia
+TCID.JK,Mandom Indonesia Tbk.,Stock,Indonesia
+TCPI.JK,Transcoal Pacific Tbk.,Stock,Indonesia
+TDPM.JK,Tianrong Chemicals Industry Tb,Stock,Indonesia
+TEBE.JK,Dana Brata Luhur Tbk.,Stock,Indonesia
+TECH.JK,Indosterling Technomedia Tbk.,Stock,Indonesia
+TELE.JK,Omni Inovasi Indonesia Tbk.,Stock,Indonesia
+TFAS.JK,Telefast Indonesia Tbk.,Stock,Indonesia
+TFCO.JK,Tifico Fiber Indonesia Tbk.,Stock,Indonesia
+TGKA.JK,Tigaraksa Satria Tbk.,Stock,Indonesia
+TGRA.JK,Terregra Asia Energy Tbk.,Stock,Indonesia
+TGUK.JK,Platinum Wahab Nusantara Tbk.,Stock,Indonesia
+TIFA.JK,KDB Tifa Finance Tbk.,Stock,Indonesia
+TINS.JK,Timah Tbk.,Stock,Indonesia
+TIRA.JK,Tira Austenite Tbk,Stock,Indonesia
+TIRT.JK,Tirta Mahakam Resources Tbk,Stock,Indonesia
+TKIM.JK,Pabrik Kertas Tjiwi Kimia Tbk.,Stock,Indonesia
+TLDN.JK,Teladan Prima Agro Tbk.,Stock,Indonesia
+TLKM.JK,Telkom Indonesia (Persero) Tbk.,Stock,Indonesia
+TMAS.JK,Temas Tbk.,Stock,Indonesia
+TMPO.JK,Tempo Intimedia Tbk.,Stock,Indonesia
+TNCA.JK,Trimuda Nuansa Citra Tbk.,Stock,Indonesia
+TOBA.JK,TBS Energi Utama Tbk.,Stock,Indonesia
+TOOL.JK,Rohartindo Nusantara Luas Tbk.,Stock,Indonesia
+TOPS.JK,Totalindo Eka Persada Tbk.,Stock,Indonesia
+TOSK.JK,Topindo Solusi Komunika Tbk.,Stock,Indonesia
+TOTL.JK,Total Bangun Persada Tbk.,Stock,Indonesia
+TOTO.JK,Surya Toto Indonesia Tbk.,Stock,Indonesia
+TOWR.JK,Sarana Menara Nusantara Tbk.,Stock,Indonesia
+TOYS.JK,Sunindo Adipersada Tbk.,Stock,Indonesia
+TPIA.JK,Chandra Asri Pacific Tbk.,Stock,Indonesia
+TPMA.JK,Trans Power Marine Tbk.,Stock,Indonesia
+TRAM.JK,Trada Alam Minera Tbk.,Stock,Indonesia
+TRGU.JK,Cerestar Indonesia Tbk.,Stock,Indonesia
+TRIL.JK,Triwira Insanlestari Tbk.,Stock,Indonesia
+TRIM.JK,Trimegah Sekuritas Indonesia T,Stock,Indonesia
+TRIN.JK,Perintis Triniti Properti Tbk.,Stock,Indonesia
+TRIO.JK,Trikomsel Oke Tbk.,Stock,Indonesia
+TRIS.JK,Trisula International Tbk.,Stock,Indonesia
+TRJA.JK,Transkon Jaya Tbk.,Stock,Indonesia
+TRON.JK,Teknologi Karya Digital Nusa T,Stock,Indonesia
+TRST.JK,Trias Sentosa Tbk.,Stock,Indonesia
+TRUE.JK,Triniti Dinamik Tbk.,Stock,Indonesia
+TRUK.JK,Guna Timur Raya Tbk.,Stock,Indonesia
+TRUS.JK,Trust Finance Indonesia Tbk,Stock,Indonesia
+TSPC.JK,Tempo Scan Pacific Tbk.,Stock,Indonesia
+TUGU.JK,Asuransi Tugu Pratama Indonesi,Stock,Indonesia
+TYRE.JK,King Tire Indonesia Tbk.,Stock,Indonesia
+UANG.JK,Pakuan Tbk.,Stock,Indonesia
+UCID.JK,Uni-Charm Indonesia Tbk.,Stock,Indonesia
+UDNG.JK,Agro Bahari Nusantara Tbk.,Stock,Indonesia
+UFOE.JK,Damai Sejahtera Abadi Tbk.,Stock,Indonesia
+ULTJ.JK,Ultrajaya Milk Industry & Trad,Stock,Indonesia
+UNIC.JK,Unggul Indah Cahaya Tbk.,Stock,Indonesia
+UNIQ.JK,Ulima Nitra Tbk.,Stock,Indonesia
+UNIT.JK,Nusantara Inti Corpora Tbk,Stock,Indonesia
+UNSP.JK,Bakrie Sumatera Plantations Tbk.,Stock,Indonesia
+UNTD.JK,Terang Dunia Internusa Tbk.,Stock,Indonesia
+UNTR.JK,United Tractors Tbk.,Stock,Indonesia
+UNVR.JK,Unilever Indonesia Tbk.,Stock,Indonesia
+URBN.JK,Urban Jakarta Propertindo Tbk.,Stock,Indonesia
+UVCR.JK,Trimegah Karya Pratama Tbk.,Stock,Indonesia
+VAST.JK,Vastland Indonesia Tbk.,Stock,Indonesia
+VERN.JK,Verona Indah Pictures Tbk.,Stock,Indonesia
+VICI.JK,Victoria Care Indonesia Tbk.,Stock,Indonesia
+VICO.JK,Victoria Investama Tbk.,Stock,Indonesia
+VINS.JK,Victoria Insurance Tbk.,Stock,Indonesia
+VISI.JK,Satu Visi Putra Tbk.,Stock,Indonesia
+VIVA.JK,Visi Media Asia Tbk.,Stock,Indonesia
+VKTR.JK,VKTR Teknologi Mobilitas Tbk.,Stock,Indonesia
+VOKS.JK,Voksel Electric Tbk.,Stock,Indonesia
+VRNA.JK,Mizuho Leasing Indonesia Tbk.,Stock,Indonesia
+VTNY.JK,Venteny Fortuna International,Stock,Indonesia
+WAPO.JK,Wahana Pronatural Tbk.,Stock,Indonesia
+WEGE.JK,Wijaya Karya Bangunan Gedung T,Stock,Indonesia
+WEHA.JK,WEHA Transportasi Indonesia Tbk.,Stock,Indonesia
+WGSH.JK,Wira Global Solusi Tbk.,Stock,Indonesia
+WICO.JK,Wicaksana Overseas International Tbk.,Stock,Indonesia
+WIDI.JK,Widiant Jaya Krenindo Tbk.,Stock,Indonesia
+WIFI.JK,Solusi Sinergi Digital Tbk.,Stock,Indonesia
+WIIM.JK,Wismilak Inti Makmur Tbk.,Stock,Indonesia
+WIKA.JK,Wijaya Karya (Persero) Tbk.,Stock,Indonesia
+WINE.JK,Hatten Bali Tbk.,Stock,Indonesia
+WINR.JK,Winner Nusantara Jaya Tbk.,Stock,Indonesia
+WINS.JK,Wintermar Offshore Marine Tbk.,Stock,Indonesia
+WIRG.JK,WIR ASIA Tbk.,Stock,Indonesia
+WMPP.JK,Widodo Makmur Perkasa Tbk.,Stock,Indonesia
+WMUU.JK,Widodo Makmur Unggas Tbk.,Stock,Indonesia
+WOMF.JK,Wahana Ottomitra Multiartha Tb,Stock,Indonesia
+WOOD.JK,Integra Indocabinet Tbk.,Stock,Indonesia
+WOWS.JK,Ginting Jaya Energi Tbk.,Stock,Indonesia
+WSBP.JK,Waskita Beton Precast Tbk.,Stock,Indonesia
+WSKT.JK,Waskita Karya (Persero) Tbk.,Stock,Indonesia
+WTON.JK,Wijaya Karya Beton Tbk.,Stock,Indonesia
+YELO.JK,Yelooo Integra Datanet Tbk.,Stock,Indonesia
+YPAS.JK,Yanaprima Hastapersada Tbk,Stock,Indonesia
+YULE.JK,Yulie Sekuritas Indonesia Tbk.,Stock,Indonesia
+ZATA.JK,Bersama Zatta Jaya Tbk.,Stock,Indonesia
+ZBRA.JK,Dosni Roha Indonesia Tbk.,Stock,Indonesia
+ZINC.JK,Kapuas Prima Coal Tbk.,Stock,Indonesia
+ZONE.JK,Mega Perintis Tbk.,Stock,Indonesia
+ZYRX.JK,Zyrexindo Mandiri Buana Tbk.,Stock,Indonesia

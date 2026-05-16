@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files (File Cache Python)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE & Editor Configurations (File Tracker Antigravity/PyCharm)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Log files & Outputs (File log buatan program)
+*.log
+runlog.txt
+runlog2.txt
+whi_run_output.txt
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+*.pdf
+*.png
