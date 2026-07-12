@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from tvdatafeed import TvDatafeed, Interval
+from tvDatafeed import TvDatafeed, Interval
 import pandas as pd
 import numpy as np
 import time
