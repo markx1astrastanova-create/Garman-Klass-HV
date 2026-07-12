@@ -12,7 +12,8 @@ function App() {
     setLoading(true)
     setError(null)
     try {
-      const response = await fetch(`http://localhost:8000/api/volatility?ticker=${ticker}&window=${windowSize}`)
+      const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      const response = await fetch(`${baseUrl}/api/volatility?ticker=${ticker}&window=${windowSize}`)
       if (!response.ok) {
         const errData = await response.json()
         throw new Error(errData.detail || 'Gagal fetch data')
