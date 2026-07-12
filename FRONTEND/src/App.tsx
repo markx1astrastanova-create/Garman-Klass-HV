@@ -19,7 +19,7 @@ function App() {
         // Coba baca error jika berformat JSON, jika tidak ambil teks mentahnya
         const isJson = response.headers.get("content-type")?.includes("application/json");
         const errDetail = isJson ? (await response.json()).detail : await response.text();
-        throw new Error(isJson ? errDetail : `Server merespons bukan JSON: ${errDetail.substring(0, 40)}... (Cek VITE_API_URL)`);
+        throw new Error(isJson ? errDetail : `Mencoba memanggil: ${baseUrl}/api/volatility\nTetapi server membalas: ${errDetail.substring(0, 40)}...`);
       }
       
       const contentType = response.headers.get("content-type");
