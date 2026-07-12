@@ -25,7 +25,7 @@ function App() {
       const contentType = response.headers.get("content-type");
       if (!contentType || !contentType.includes("application/json")) {
         const text = await response.text();
-        throw new Error(`Target API (${baseUrl}) merespons HTML, bukan JSON. Anda mungkin salah memasukkan URL di pengaturan VITE_API_URL Vercel.`);
+        throw new Error(`Target API (${baseUrl}) merespons HTML, bukan JSON. Cek VITE_API_URL. Respons server: ${text.substring(0, 40)}...`);
       }
 
       const json = await response.json()
