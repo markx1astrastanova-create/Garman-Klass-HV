@@ -72,9 +72,9 @@ function App() {
 
       {error && <div className="error">{error}</div>}
 
-      {data && data.data && (
+      {data && data.length > 0 && (
         <div className="chart-container">
-          <ChartComponent data={data.data} />
+          <ChartComponent data={data} />
         </div>
       )}
     </>
