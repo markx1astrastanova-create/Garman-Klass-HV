@@ -1,27 +1,26 @@
-# Byte-compiled / optimized / DLL files (File Cache Python)
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.Python
+env/
+venv/
+.env
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
 
-# IDE & Editor Configurations (File Tracker Antigravity/PyCharm)
-.idea/
+# Node / Vite React
+node_modules/
+dist/
+dist-ssr/
+*.local
+.npm/
+
+# IDE & OS
 .vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
-
-# Log files & Outputs (File log buatan program)
-*.log
-runlog.txt
-runlog2.txt
-whi_run_output.txt
-
-# OS Files
+.idea/
 .DS_Store
 Thumbs.db
-
-*.pdf
-*.png

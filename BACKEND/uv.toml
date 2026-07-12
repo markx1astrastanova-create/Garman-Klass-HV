@@ -1,0 +1,2 @@
+# Memaksa mode copy untuk menghindari warning hardlink lintas-drive
+link-mode = "copy"

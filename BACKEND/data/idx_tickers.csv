@@ -1,0 +1,35 @@
+Ticker,Nama,Type,Region
+^JKSE,IHSG,Index,Asean
+^IXIC,NASDAQ,Index,America
+^GSPC,S&P 500,Index,America
+^DJI,DOW JONES,Index,America
+^KS11,KOSPI,Index,Asia
+^N225,NIKKEI 225,Index,Asia
+^HIS,HANG SENG,Index,Asia
+000001.SS,SSE,Index,Asia
+^GDAXI,DAX,Index,Europe
+^FTSE,FTSE 100,Index,Europe
+^SET.BK,Thailand Stock Index,Index,Asean
+^VNINDEX.VN,Vietnam Stock Index,Index,Asean
+^KLSE,Malaysia Stock Index,Index,Asean
+^PSEI.PS,Filipina Stock Index,Index,Asean
+^BSESN,Sensex India,Index,Asia
+^VIX,CBOE Volatility Index,Index,America
+^RUT,Russell 2000,Index,America
+GC=F,Gold,Commodities,Global
+SI=F,Silver,Commodities,Global
+BTC-USD,Bitcoin,Crypto,Global
+ETH-USD,Ethereum,Crypto,Global
+SOL-USD,Solana,Crypto,Global
+^FCHI,CAC 40,Index,Europe
+IDXENERGY.JK,IDX ENERGY,Index,Indonesia
+IDXFINANCE.JK,IDX FINANCE,Index,Indonesia
+IDXTRANS.JK,IDX TRANSPOERTATION,Index,Indonesia
+IDXCYCLIC.JK,IDX CYCLIC,Index,Indonesia
+IDXNONCYC.JK,IDX NONCYCLICAL,Index,Indonesia
+IDXTECHNO.JK,IDX TECHNOLOGY,Index,Indonesia
+IDXBASIC.JK,IDX BASIC,Index,Indonesia
+IDXPROPERT.JK,IDX PROPERTY,Index,Indonesia
+IDXINDUST.JK,IDX INDUSTRY,Index,Indonesia
+IDXHEALTH.JK,IDX HEALTH,Index,Indonesia
+IDXINFRA.JK,IDX INFRASTUCTURE,Index,Indonesia
