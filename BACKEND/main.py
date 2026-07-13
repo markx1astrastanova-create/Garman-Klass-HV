@@ -38,6 +38,8 @@ def load_ticker_db() -> dict:
                     "symbol": str(row.get('symbol', '')).strip().upper(),
                     "exchange": str(row.get('exchange', '')).strip().upper(),
                     "name": str(row.get('name', '')),
+                    "aliases": str(row.get('aliases', '')),
+                    "keywords": str(row.get('keywords', '')),
                     "type": str(row.get('type', '')),
                     "region": str(row.get('region', '')),
                     "active": str(row.get('active', '')).strip().lower() == 'true'
@@ -97,7 +99,9 @@ def get_tickers():
                 "name": info["name"],
                 "type": info["type"],
                 "region": info["region"],
-                "exchange": info["exchange"]
+                "exchange": info["exchange"],
+                "aliases": info.get("aliases", ""),
+                "keywords": info.get("keywords", "")
             })
     return active_tickers
 

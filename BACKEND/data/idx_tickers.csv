@@ -1,20 +1,21 @@
-symbol,exchange,ticker,name,type,region,active
-COMPOSITE,IDX,JKSE,IHSG,Index,ASEAN,true
-NI225,TVC,NKY,Nikkei 225,Index,Asia,true
-HSI,INDEX,HIS,Hang Seng Index,Index,Asia,true
-SPX,SP,SPX,S&P 500,Index,America,true
-IXIC,NASDAQ,IXIC,NASDAQ Composite,Index,America,true
-DJI,DJ,DJI,Dow Jones,Index,America,true
-KOSPI,KRX,KOSPI,KOSPI Composite,Index,Asia,true
-000001,SSE,SSE,Shanghai Composite,Index,Asia,true
-DAX,XETR,DAX,DAX 40,Index,Europe,true
-UKX,FTSE,UKX,FTSE 100,Index,Europe,true
-SET,SET,SET,Thailand SET Index,Index,ASEAN,true
-VNINDEX,HOSE,VNINDEX,Vietnam VN-Index,Index,ASEAN,true
-KLSE,INDEX,KLSE,Malaysia KLCI,Index,ASEAN,true
-PSEI,PSE,PSEI,Philippine PSEi,Index,ASEAN,true
-SENSEX,BSE,SENSEX,S&P BSE Sensex,Index,Asia,true
-RUT,CBOE,RUT,Russell 2000,Index,America,true
-PX1,Euronext,PX1,CAC 40,Index,Europe,true
-GC1!,COMEX,GC1!,Gold Futures,Commodities,Global,true
-SI1!,COMEX,SI1!,Silver Futures,Commodities,Global,true
+symbol,exchange,ticker,name,aliases,keywords,type,region,active
+COMPOSITE,IDX,JKSE,IHSG,ihsg|composite|indeks harga saham gabungan|jakarta|indonesia,index|asean|indonesia,Index,ASEAN,true
+NI225,TVC,NKY,Nikkei 225,nikkei|n225|japan|tokyo,index|asia|japan,Index,Asia,true
+HSI,INDEX,HIS,Hang Seng,hang seng|hk|hong kong|china,index|asia|china,Index,Asia,true
+SPX,SP,SPX,S&P 500,sp500|snp|s&p|america|us|usa,index|america|usa,Index,America,true
+IXIC,NASDAQ,IXIC,NASDAQ Composite,nasdaq|tech|us|america,index|america|tech,Index,America,true
+DJI,DJ,DJI,Dow Jones,dow|dow jones|us|america,index|america,Index,America,true
+KOSPI,KRX,KOSPI,KOSPI Composite,kospi|korea|seoul,index|asia|korea,Index,Asia,true
+000001,SSE,SSE,Shanghai Composite,shanghai|sse|china,index|asia|china,Index,Asia,true
+DAX,XETR,DAX,DAX 40,dax|germany|europe|deutschland,index|europe|germany,Index,Europe,true
+UKX,FTSE,UKX,FTSE 100,ftse|uk|britain|london|england,index|europe|uk,Index,Europe,true
+SET,SET,SET,Thailand SET Index,set|thailand|bangkok,index|asean|thailand,Index,ASEAN,true
+VNINDEX,HOSE,VNINDEX,Vietnam VN-Index,vnindex|vietnam|ho chi minh,index|asean|vietnam,Index,ASEAN,true
+KLSE,INDEX,KLSE,Malaysia KLCI,klse|klci|malaysia|bursa malaysia,index|asean|malaysia,Index,ASEAN,true
+PSEI,PSE,PSEI,Philippine PSEi,psei|philippines|manila,index|asean|philippines,Index,ASEAN,true
+SENSEX,BSE,SENSEX,S&P BSE Sensex,sensex|india|bombay|mumbai,index|asia|india,Index,Asia,true
+RUT,CBOE,RUT,Russell 2000,russell|rut|small cap|usa,index|america|usa,Index,America,true
+PX1,Euronext,PX1,CAC 40,cac|france|paris|cac40,index|europe|france,Index,Europe,true
+GC1!,COMEX,GC1!,Gold Futures,gold|emas|xau|commodity,commodity|gold|global,Commodities,Global,true
+SI1!,COMEX,SI1!,Silver Futures,silver|perak|xag|commodity,commodity|silver|global,Commodities,Global,true
+CL1!,COMEX,CL1!,Crude Oil Futures,oil|minyak|wti|crude|commodity,commodity|oil|global,Commodities,Global,true
