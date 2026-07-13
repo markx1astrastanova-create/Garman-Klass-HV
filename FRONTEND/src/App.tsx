@@ -1,12 +1,31 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ChartComponent from './components/Chart'
+import TickerDropdown, { TickerInfo } from './components/TickerDropdown'
 
 function App() {
-  const [ticker, setTicker] = useState('BBRI')
+  const [ticker, setTicker] = useState('JKSE') // default ticker updated
   const [windowSize, setWindowSize] = useState(60)
   const [data, setData] = useState<any>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  
+  const [tickers, setTickers] = useState<TickerInfo[]>([])
+  
+  useEffect(() => {
+    const fetchTickers = async () => {
+      try {
+        const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+        const res = await fetch(`${baseUrl}/api/tickers`);
+        if (res.ok) {
+          const list = await res.json();
+          setTickers(list);
+        }
+      } catch (err) {
+        console.error("Gagal load tickers", err);
+      }
+    };
+    fetchTickers();
+  }, []);
 
   const fetchData = async () => {
     setLoading(true)
@@ -42,14 +61,12 @@ function App() {
       <h1>GKHV Quant Engine</h1>
       
       <div className="controls">
-        <div>
-          <label htmlFor="ticker">Ticker: </label>
-          <input 
-            id="ticker"
-            type="text" 
-            value={ticker} 
-            onChange={(e) => setTicker(e.target.value)} 
-            placeholder="Contoh: BBRI atau ^JKSE"
+        <div style={{ flex: 1 }}>
+          <label style={{ display: 'block', marginBottom: '8px' }}>Ticker: </label>
+          <TickerDropdown 
+            tickers={tickers} 
+            selectedTicker={ticker} 
+            onSelect={setTicker} 
           />
         </div>
         
