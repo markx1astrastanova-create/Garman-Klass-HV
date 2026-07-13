@@ -26,16 +26,35 @@ except Exception as e:
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IDX_CSV_PATH = os.path.join(BASE_DIR, "data", "idx_tickers.csv")
 
-def get_idx_stocks() -> pd.DataFrame:
+def load_ticker_db() -> dict:
     try:
         df = pd.read_csv(IDX_CSV_PATH, sep=None, engine='python')
-        df.columns = df.columns.str.strip()
-        df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
-        df = df.dropna(subset=['Ticker', 'Nama'])
-        return df
+        df.columns = df.columns.str.strip().str.lower()
+        db = {}
+        for _, row in df.iterrows():
+            ticker_input = str(row.get('ticker', '')).strip().upper()
+            if ticker_input and ticker_input != 'NAN':
+                db[ticker_input] = {
+                    "symbol": str(row.get('symbol', '')).strip().upper(),
+                    "exchange": str(row.get('exchange', '')).strip().upper(),
+                    "name": str(row.get('name', '')),
+                    "type": str(row.get('type', '')),
+                    "region": str(row.get('region', '')),
+                    "active": str(row.get('active', '')).strip().lower() == 'true'
+                }
+        return db
     except Exception as e:
-        print(f"Gagal membaca CSV: {e}")
-        return pd.DataFrame()
+        print(f"Gagal load TICKER_DB: {e}")
+        return {}
+
+TICKER_DB = load_ticker_db()
+
+def resolve_ticker(ticker_input: str) -> dict:
+    clean_ticker = ticker_input.strip().upper()
+    info = TICKER_DB.get(clean_ticker)
+    if not info:
+        raise HTTPException(status_code=404, detail="Ticker not found in registry")
+    return info
 
 def calculate_meilijson_volatility(df: pd.DataFrame) -> pd.Series:
     ln_open = np.log(df['Open'])
@@ -70,27 +89,34 @@ def calculate_zscore_metrics(df: pd.DataFrame, window: int = 60) -> pd.DataFrame
 
 @app.get("/api/tickers")
 def get_tickers():
-    df = get_idx_stocks()
-    if df.empty:
-        return []
-    return df.to_dict(orient="records")
+    active_tickers = []
+    for ticker, info in TICKER_DB.items():
+        if info['active']:
+            active_tickers.append({
+                "ticker": ticker,
+                "name": info["name"],
+                "type": info["type"],
+                "region": info["region"],
+                "exchange": info["exchange"]
+            })
+    return active_tickers
 
 @app.get("/api/volatility")
 def get_volatility(ticker: str, window: int = 60, n_bars: int = 500):
     try:
+        # Resolve ticker mapping
+        info = resolve_ticker(ticker)
+        symbol = info["symbol"]
+        exchange = info["exchange"]
+        
         # ⚠️ CRITICAL: Jeda waktu Anti-DDoS sebelum menembak TradingView
         time.sleep(random.uniform(1.5, 3.0))
-        
-        # Bersihkan format ticker (Contoh: BBRI.JK -> BBRI)
-        clean_ticker = ticker.split('.')[0].upper()
-        if clean_ticker in ["JKSE", "^JKSE", "COMPOSITE"]:
-            clean_ticker = "COMPOSITE"
             
         # Ambil data dari TradingView
-        df_tv = tv.get_hist(symbol=clean_ticker, exchange='IDX', interval=Interval.in_daily, n_bars=n_bars)
+        df_tv = tv.get_hist(symbol=symbol, exchange=exchange, interval=Interval.in_daily, n_bars=n_bars)
         
         if df_tv is None or df_tv.empty:
-            raise HTTPException(status_code=404, detail=f"Data untuk {clean_ticker} tidak ditemukan di TradingView.")
+            raise HTTPException(status_code=404, detail=f"Data untuk {symbol}@{exchange} tidak ditemukan di TradingView.")
             
         # Standarisasi kolom dari tvdatafeed ke Math Engine
         df_tv = df_tv.rename(columns={

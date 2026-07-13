@@ -1,35 +1,20 @@
-Ticker,Nama,Type,Region
-^JKSE,IHSG,Index,Asean
-^IXIC,NASDAQ,Index,America
-^GSPC,S&P 500,Index,America
-^DJI,DOW JONES,Index,America
-^KS11,KOSPI,Index,Asia
-^N225,NIKKEI 225,Index,Asia
-^HIS,HANG SENG,Index,Asia
-000001.SS,SSE,Index,Asia
-^GDAXI,DAX,Index,Europe
-^FTSE,FTSE 100,Index,Europe
-^SET.BK,Thailand Stock Index,Index,Asean
-^VNINDEX.VN,Vietnam Stock Index,Index,Asean
-^KLSE,Malaysia Stock Index,Index,Asean
-^PSEI.PS,Filipina Stock Index,Index,Asean
-^BSESN,Sensex India,Index,Asia
-^VIX,CBOE Volatility Index,Index,America
-^RUT,Russell 2000,Index,America
-GC=F,Gold,Commodities,Global
-SI=F,Silver,Commodities,Global
-BTC-USD,Bitcoin,Crypto,Global
-ETH-USD,Ethereum,Crypto,Global
-SOL-USD,Solana,Crypto,Global
-^FCHI,CAC 40,Index,Europe
-IDXENERGY.JK,IDX ENERGY,Index,Indonesia
-IDXFINANCE.JK,IDX FINANCE,Index,Indonesia
-IDXTRANS.JK,IDX TRANSPOERTATION,Index,Indonesia
-IDXCYCLIC.JK,IDX CYCLIC,Index,Indonesia
-IDXNONCYC.JK,IDX NONCYCLICAL,Index,Indonesia
-IDXTECHNO.JK,IDX TECHNOLOGY,Index,Indonesia
-IDXBASIC.JK,IDX BASIC,Index,Indonesia
-IDXPROPERT.JK,IDX PROPERTY,Index,Indonesia
-IDXINDUST.JK,IDX INDUSTRY,Index,Indonesia
-IDXHEALTH.JK,IDX HEALTH,Index,Indonesia
-IDXINFRA.JK,IDX INFRASTUCTURE,Index,Indonesia
+symbol,exchange,ticker,name,type,region,active
+COMPOSITE,IDX,JKSE,IHSG,Index,ASEAN,true
+NI225,TVC,NKY,Nikkei 225,Index,Asia,true
+HSI,INDEX,HIS,Hang Seng Index,Index,Asia,true
+SPX,SP,SPX,S&P 500,Index,America,true
+IXIC,NASDAQ,IXIC,NASDAQ Composite,Index,America,true
+DJI,DJ,DJI,Dow Jones,Index,America,true
+KOSPI,KRX,KOSPI,KOSPI Composite,Index,Asia,true
+000001,SSE,SSE,Shanghai Composite,Index,Asia,true
+DAX,XETR,DAX,DAX 40,Index,Europe,true
+UKX,FTSE,UKX,FTSE 100,Index,Europe,true
+SET,SET,SET,Thailand SET Index,Index,ASEAN,true
+VNINDEX,HOSE,VNINDEX,Vietnam VN-Index,Index,ASEAN,true
+KLSE,INDEX,KLSE,Malaysia KLCI,Index,ASEAN,true
+PSEI,PSE,PSEI,Philippine PSEi,Index,ASEAN,true
+SENSEX,BSE,SENSEX,S&P BSE Sensex,Index,Asia,true
+RUT,CBOE,RUT,Russell 2000,Index,America,true
+PX1,Euronext,PX1,CAC 40,Index,Europe,true
+GC1!,COMEX,GC1!,Gold Futures,Commodities,Global,true
+SI1!,COMEX,SI1!,Silver Futures,Commodities,Global,true
