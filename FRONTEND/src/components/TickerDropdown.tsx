@@ -110,13 +110,14 @@ const TickerDropdown: React.FC<TickerDropdownProps> = ({ tickers, selectedTicker
           alignItems: 'center',
           justifyContent: 'space-between',
           width: '100%',
-          padding: '10px 14px',
-          background: '#1e1e1e',
-          border: '1px solid #333',
-          borderRadius: '8px',
-          color: '#fff',
+          padding: '6px 10px',
+          background: 'var(--bg-tertiary)',
+          border: '1px solid var(--border)',
+          borderRadius: '3px',
+          color: 'var(--text-primary)',
           cursor: 'pointer',
-          textAlign: 'left'
+          textAlign: 'left',
+          fontSize: '13px'
         }}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
@@ -125,7 +126,7 @@ const TickerDropdown: React.FC<TickerDropdownProps> = ({ tickers, selectedTicker
           {displayLabel}
         </span>
         <svg 
-          width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+          width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
           style={{ transition: 'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'rotate(0)' }}
         >
           <path d="M6 9l6 6 6-6"/>
@@ -138,14 +139,14 @@ const TickerDropdown: React.FC<TickerDropdownProps> = ({ tickers, selectedTicker
           className="dropdown-panel"
           style={{
             position: 'absolute',
-            top: 'calc(100% + 8px)',
+            top: 'calc(100% + 4px)',
             left: 0,
             width: '320px',
             maxHeight: '400px',
-            background: '#1e1e1e',
-            border: '1px solid #333',
-            borderRadius: '8px',
-            boxShadow: '0 10px 25px rgba(0,0,0,0.5)',
+            background: 'var(--bg-secondary)',
+            border: '1px solid var(--border)',
+            borderRadius: '3px',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.8)',
             zIndex: 9999,
             display: 'flex',
             flexDirection: 'column',

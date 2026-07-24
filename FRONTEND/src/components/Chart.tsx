@@ -22,26 +22,32 @@ const ChartComponent = ({ data }: ChartProps) => {
     if (!chartContainerRef.current) return
 
     const handleResize = () => {
-      chart.applyOptions({ width: chartContainerRef.current?.clientWidth })
+      chart.applyOptions({ width: chartContainerRef.current?.clientWidth, height: chartContainerRef.current?.clientHeight })
     }
 
     const chart = createChart(chartContainerRef.current, {
       layout: {
-        background: { type: ColorType.Solid, color: '#1e1e1e' },
-        textColor: '#d1d4dc',
+        background: { type: ColorType.Solid, color: '#000000' },
+        textColor: '#888888',
       },
       grid: {
-        vertLines: { color: '#2B2B43' },
-        horzLines: { color: '#2B2B43' },
+        vertLines: { color: '#1a1a1a' },
+        horzLines: { color: '#1a1a1a' },
       },
       crosshair: {
         mode: CrosshairMode.Normal,
+        vertLine: { color: '#333333', style: 2 },
+        horzLine: { color: '#333333', style: 2 },
       },
       rightPriceScale: {
-        borderColor: '#2B2B43',
+        borderColor: '#1a1a1a',
+        scaleMargins: {
+          top: 0.05,
+          bottom: 0.35, // Main chart takes top 65%
+        },
       },
       timeScale: {
-        borderColor: '#2B2B43',
+        borderColor: '#1a1a1a',
       },
     })
 
@@ -49,11 +55,11 @@ const ChartComponent = ({ data }: ChartProps) => {
 
     // Candlestick Series
     const candleSeries = chart.addCandlestickSeries({
-      upColor: '#26a69a',
-      downColor: '#ef5350',
+      upColor: '#00ff88',
+      downColor: '#ff4444',
       borderVisible: false,
-      wickUpColor: '#26a69a',
-      wickDownColor: '#ef5350',
+      wickUpColor: '#00ff88',
+      wickDownColor: '#ff4444',
     })
 
     const candleData = data.map((d) => ({
@@ -65,16 +71,22 @@ const ChartComponent = ({ data }: ChartProps) => {
     }))
     candleSeries.setData(candleData)
 
-    // Z-Score Series (Line) with distinct scale
-    const zscoreSeries = chart.addLineSeries({
-      color: '#e74c3c',
+    // Z-Score Series (Baseline for different area fill colors)
+    const zscoreSeries = chart.addBaselineSeries({
+      baseValue: { type: 'price', price: 0 },
+      topLineColor: '#ff8c00',
+      topFillColor1: 'rgba(255, 140, 0, 0.15)',
+      topFillColor2: 'rgba(255, 140, 0, 0.05)',
+      bottomLineColor: '#ff8c00',
+      bottomFillColor1: 'rgba(0, 191, 255, 0.05)',
+      bottomFillColor2: 'rgba(0, 191, 255, 0.15)',
       lineWidth: 2,
       priceScaleId: 'zscore',
     })
 
     chart.priceScale('zscore').applyOptions({
       scaleMargins: {
-        top: 0.7,
+        top: 0.7, // Vol chart takes bottom 30%
         bottom: 0,
       },
     })
@@ -88,20 +100,28 @@ const ChartComponent = ({ data }: ChartProps) => {
     // Baseline threshold for Z-Score
     zscoreSeries.createPriceLine({
       price: 2.5,
-      color: 'orange',
+      color: '#ff8c00',
       lineWidth: 1,
       lineStyle: 2,
       axisLabelVisible: true,
-      title: 'EXPANSION (2.5)',
+      title: 'EXPANSION 2.5',
     });
     
     zscoreSeries.createPriceLine({
       price: -1.0,
-      color: 'green',
+      color: '#00bfff',
       lineWidth: 1,
       lineStyle: 2,
       axisLabelVisible: true,
-      title: 'COMPRESSION (-1.0)',
+      title: 'COMPRESSION -1.0',
+    });
+
+    zscoreSeries.createPriceLine({
+      price: 0,
+      color: '#333333',
+      lineWidth: 1,
+      lineStyle: 0,
+      axisLabelVisible: false,
     });
 
     window.addEventListener('resize', handleResize)

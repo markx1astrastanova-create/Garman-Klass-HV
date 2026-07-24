@@ -3,7 +3,7 @@ import ChartComponent from './components/Chart'
 import TickerDropdown, { TickerInfo } from './components/TickerDropdown'
 
 function App() {
-  const [ticker, setTicker] = useState('JKSE') // default ticker updated
+  const [ticker, setTicker] = useState('JKSE')
   const [windowSize, setWindowSize] = useState(60)
   const [data, setData] = useState<any>(null)
   const [loading, setLoading] = useState(false)
@@ -27,15 +27,14 @@ function App() {
     fetchTickers();
   }, []);
 
-  const fetchData = async () => {
+  const fetchData = async (targetTicker: string, targetWindow: number) => {
     setLoading(true)
     setError(null)
     try {
       const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
-      const response = await fetch(`${baseUrl}/api/volatility?ticker=${ticker}&window=${windowSize}`)
+      const response = await fetch(`${baseUrl}/api/volatility?ticker=${targetTicker}&window=${targetWindow}`)
       
       if (!response.ok) {
-        // Coba baca error jika berformat JSON, jika tidak ambil teks mentahnya
         const isJson = response.headers.get("content-type")?.includes("application/json");
         const errDetail = isJson ? (await response.json()).detail : await response.text();
         throw new Error(isJson ? errDetail : `Mencoba memanggil: ${baseUrl}/api/volatility\nTetapi server membalas: ${errDetail.substring(0, 40)}...`);
@@ -56,45 +55,93 @@ function App() {
     }
   }
 
+  // Initial fetch on mount
+  useEffect(() => {
+    fetchData(ticker, windowSize);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleTickerSelect = (newTicker: string) => {
+    setTicker(newTicker);
+    fetchData(newTicker, windowSize); // Auto trigger with current window
+  };
+
+  // Determine regime status for the header
+  let regime = 'NORMAL';
+  let pillClass = '';
+  if (data && data.length > 0) {
+    const lastZ = data[data.length - 1].GK_Zscore;
+    if (lastZ >= 2.5) {
+      regime = 'EXPANSION';
+      pillClass = 'amber';
+    } else if (lastZ <= -1.0) {
+      regime = 'COMPRESSION';
+      pillClass = 'cyan';
+    }
+  }
+
+  const selectedInfo = tickers.find(t => t.ticker === ticker);
+  const displayTicker = selectedInfo ? `${selectedInfo.ticker} — ${selectedInfo.name}` : ticker;
+
   return (
-    <>
-      <h1>GKHV Quant Engine</h1>
+    <div className="app-grid">
+      <header className="header-bar">
+        <div className="header-left">
+           <span className="header-title">GKHV</span>
+           <span className="header-subtitle">Market Terminal Intelligence</span>
+        </div>
+        <div className="header-pills">
+           <div className="pill">{displayTicker}</div>
+           <div className={`pill ${pillClass}`}>{regime}</div>
+           <div className="pill dashed">Market Status</div>
+           <div className="pill dashed">+ Add subheading</div>
+        </div>
+      </header>
       
-      <div className="controls">
-        <div style={{ flex: 1 }}>
-          <label style={{ display: 'block', marginBottom: '8px' }}>Ticker: </label>
-          <TickerDropdown 
-            tickers={tickers} 
-            selectedTicker={ticker} 
-            onSelect={setTicker} 
-          />
+      <aside className="sidebar">
+        <h2 className="sidebar-title">Summary</h2>
+        <div className="sidebar-card">SIGNAL</div>
+        <div className="sidebar-card">BREADTH</div>
+        <div className="sidebar-card">VOLATILITY</div>
+        <div className="sidebar-card">REGIME</div>
+        <div className="sidebar-card">RISK</div>
+        <div className="sidebar-card">TREND</div>
+      </aside>
+      
+      <main className="main-content">
+        <div className="top-bar">
+           <div style={{ width: '250px' }}>
+             <TickerDropdown 
+               tickers={tickers} 
+               selectedTicker={ticker} 
+               onSelect={handleTickerSelect} 
+             />
+           </div>
+           <div className="window-input-group">
+             <label htmlFor="window">Window</label>
+             <input 
+               type="number" 
+               id="window" 
+               value={windowSize} 
+               onChange={(e) => setWindowSize(Number(e.target.value))} 
+               min="10" 
+               max="200" 
+               onKeyDown={(e) => {
+                 if (e.key === 'Enter') {
+                   fetchData(ticker, windowSize);
+                 }
+               }}
+             />
+           </div>
+           {loading && <span style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Processing...</span>}
         </div>
         
-        <div>
-          <label htmlFor="window">Window (Z-Score): </label>
-          <input 
-            id="window"
-            type="number" 
-            value={windowSize} 
-            onChange={(e) => setWindowSize(Number(e.target.value))} 
-            min="10"
-            max="100"
-          />
+        {error && <div className="error-banner">{error}</div>}
+        
+        <div className="chart-wrapper">
+          {data && data.length > 0 && <ChartComponent data={data} />}
         </div>
-
-        <button onClick={fetchData} disabled={loading}>
-          {loading ? 'Fetching...' : 'Analyze'}
-        </button>
-      </div>
-
-      {error && <div className="error">{error}</div>}
-
-      {data && data.length > 0 && (
-        <div className="chart-container">
-          <ChartComponent data={data} />
-        </div>
-      )}
-    </>
+      </main>
+    </div>
   )
 }
 
