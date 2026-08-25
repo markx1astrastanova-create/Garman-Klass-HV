@@ -38,8 +38,6 @@ def load_ticker_db() -> dict:
                     "symbol": str(row.get('symbol', '')).strip().upper(),
                     "exchange": str(row.get('exchange', '')).strip().upper(),
                     "name": str(row.get('name', '')),
-                    "aliases": str(row.get('aliases', '')),
-                    "keywords": str(row.get('keywords', '')),
                     "type": str(row.get('type', '')),
                     "region": str(row.get('region', '')),
                     "active": str(row.get('active', '')).strip().lower() == 'true'
@@ -99,9 +97,7 @@ def get_tickers():
                 "name": info["name"],
                 "type": info["type"],
                 "region": info["region"],
-                "exchange": info["exchange"],
-                "aliases": info.get("aliases", ""),
-                "keywords": info.get("keywords", "")
+                "exchange": info["exchange"]
             })
     return active_tickers
 
@@ -113,7 +109,7 @@ def get_volatility(ticker: str, window: int = 60, n_bars: int = 500):
         symbol = info["symbol"]
         exchange = info["exchange"]
         
-        # ⚠️ CRITICAL: Jeda waktu Anti-DDoS sebelum menembak TradingView
+        # CRITICAL: Jeda waktu Anti-DDoS sebelum menembak TradingView
         time.sleep(random.uniform(1.5, 3.0))
             
         # Ambil data dari TradingView
