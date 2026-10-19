@@ -10,6 +10,8 @@ st.set_page_config(page_title="GKHV", layout="wide", initial_sidebar_state="coll
 st.markdown("""
 <style>
 .stMainBlockContainer {padding: 0; max-width: 100%;}
+.stMainBlockContainer [data-testid="stVerticalBlock"] {gap: 0;}
+iframe[title="streamlit_app.gkhv"] {display: block; height: 100dvh;}
 header[data-testid="stHeader"] {display: none;}
 </style>
 """, unsafe_allow_html=True)
