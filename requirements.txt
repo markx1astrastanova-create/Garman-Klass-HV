@@ -1,2 +1,3 @@
+# Shared backend dependencies, including yfinance daily history.
 -r BACKEND/requirements.txt
 streamlit>=1.41,<2

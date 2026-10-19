@@ -1,13 +1,12 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from tvDatafeed import TvDatafeed, Interval
+from datetime import datetime, timedelta, timezone
+import yfinance as yf
 import pandas as pd
 import numpy as np
-import time
-import random
 import os
 
-app = FastAPI(title="GKHV Quant Engine - TV Version")
+app = FastAPI(title="GKHV Quant Engine - Yahoo Finance")
 
 app.add_middleware(
     CORSMiddleware,
@@ -16,12 +15,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# Inisialisasi TvDatafeed secara anonim
-try:
-    tv = TvDatafeed()
-except Exception as e:
-    print(f"Gagal inisialisasi TradingView Datafeed: {e}")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IDX_CSV_PATH = os.path.join(BASE_DIR, "data", "idx_tickers.csv")
@@ -37,6 +30,7 @@ def load_ticker_db() -> dict:
                 db[ticker_input] = {
                     "symbol": str(row.get('symbol', '')).strip().upper(),
                     "exchange": str(row.get('exchange', '')).strip().upper(),
+                    "yahoo_symbol": str(row.get('yahoo_symbol', '')).strip(),
                     "name": str(row.get('name', '')),
                     "type": str(row.get('type', '')),
                     "region": str(row.get('region', '')),
@@ -106,29 +100,37 @@ def get_volatility(ticker: str, window: int = 60, n_bars: int = 500):
     try:
         # Resolve ticker mapping
         info = resolve_ticker(ticker)
-        symbol = info["symbol"]
-        exchange = info["exchange"]
-        
-        # CRITICAL: Jeda waktu Anti-DDoS sebelum menembak TradingView
-        time.sleep(random.uniform(1.5, 3.0))
-            
-        # Ambil data dari TradingView
-        df_tv = tv.get_hist(symbol=symbol, exchange=exchange, interval=Interval.in_daily, n_bars=n_bars)
-        
-        if df_tv is None or df_tv.empty:
-            raise HTTPException(status_code=404, detail=f"Data untuk {symbol}@{exchange} tidak ditemukan di TradingView.")
-            
-        # Standarisasi kolom dari tvdatafeed ke Math Engine
-        df_tv = df_tv.rename(columns={
-            'open': 'Open', 'high': 'High', 'low': 'Low', 'close': 'Close'
-        })
+        symbol = info["yahoo_symbol"]
+        if not symbol or symbol.lower() == 'nan':
+            raise HTTPException(status_code=404, detail="Ticker belum memiliki simbol Yahoo Finance")
+        if n_bars < 1:
+            raise HTTPException(status_code=422, detail="n_bars must be positive")
+
+        # Beri ruang untuk akhir pekan dan hari libur sebelum mengambil n_bars terakhir.
+        start = (datetime.now(timezone.utc) - timedelta(days=n_bars * 2 + 30)).date()
+        df_prices = yf.Ticker(symbol).history(
+            start=start.isoformat(), interval="1d", auto_adjust=False,
+            actions=False, timeout=20, raise_errors=True,
+        )
+
+        if df_prices is None or df_prices.empty:
+            raise HTTPException(status_code=404, detail=f"Data untuk {symbol} tidak ditemukan di Yahoo Finance.")
+
+        # Yahoo sudah memakai nama kolom OHLC yang dibutuhkan Math Engine.
+        ohlc = ['Open', 'High', 'Low', 'Close']
+        df_prices = df_prices.dropna(subset=ohlc)
+        df_prices = df_prices.loc[(df_prices[ohlc] > 0).all(axis=1)].sort_index().tail(n_bars)
+        if df_prices.empty:
+            raise HTTPException(status_code=404, detail=f"Data OHLC untuk {symbol} tidak tersedia di Yahoo Finance.")
+        if len(df_prices) < window:
+            raise HTTPException(status_code=404, detail=f"Yahoo Finance hanya menyediakan {len(df_prices)} bar OHLC valid untuk {symbol}; minimal {window} bar diperlukan.")
         
         # Hitung Matrik Kuantitatif (Meilijson S2)
-        df_processed = calculate_zscore_metrics(df_tv, window)
+        df_processed = calculate_zscore_metrics(df_prices, window)
         
         # Reset indeks datetime untuk konversi JSON
         df_processed = df_processed.reset_index()
-        # tvdatafeed mengembalikan index 'datetime'
+        # Terima nama index tanggal dari penyedia data.
         if 'datetime' in df_processed.columns:
             df_processed['date'] = df_processed['datetime'].dt.strftime('%Y-%m-%d')
         else:

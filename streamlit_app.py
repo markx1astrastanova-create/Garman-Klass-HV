@@ -29,7 +29,7 @@ component = components.declare_component(
 request = component(response=st.session_state.get("response"), key="gkhv", default=None)
 if isinstance(request, dict) and request.get("id") != st.session_state.get("request_id"):
     backend, lock = load_backend()
-    # TvDatafeed shares a websocket; serialize access across browser sessions.
+    # Serialize upstream data requests across browser sessions.
     with lock:
         st.session_state.response = dispatch(request, backend)
     st.session_state.request_id = request["id"]

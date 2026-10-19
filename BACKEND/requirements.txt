@@ -2,4 +2,4 @@ fastapi
 uvicorn
 pandas
 numpy
-git+https://github.com/rongardF/tvdatafeed.git
+yfinance>=1.7,<2

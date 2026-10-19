@@ -2,8 +2,23 @@
 
 The existing React interface runs as a Streamlit custom component. Python calls
 the existing backend functions directly. No Railway, Vercel, public API server,
-or TradingView account is required. Anonymous TradingView access can be limited
-or blocked upstream; hosting on Streamlit does not guarantee market-data access.
+or market-data account is required. Historical daily OHLC comes from Yahoo Finance
+through yfinance. Yahoo can limit or block requests; hosting on Streamlit does not
+guarantee market-data access. The default request returns the latest 500 available
+valid daily bars, not 60 bars; the window remains the volatility calculation window.
+
+Yahoo symbols are stored separately in `BACKEND/data/idx_tickers.csv`, preserving
+the existing dropdown labels. Futures use Yahoo's front-month series, which can
+differ from TradingView continuous futures. No substitute ETF is used for an index.
+If Yahoo provides fewer valid OHLC bars than the selected window, the existing
+error banner explains the limit instead of showing misleading zero volatility.
+Local source checks found 500 bars for 17 of the 20 registered tickers. Yahoo
+returned only one valid OHLC bar for SET, VNINDEX, and PSEI during verification;
+these remain in the dropdown but cannot calculate historical volatility until
+Yahoo supplies sufficient OHLC history.
+
+To roll back the data-source migration, revert its Git commit and redeploy so
+the previous TradingView dependency and symbol registry return together.
 
 ## Community Cloud
 
