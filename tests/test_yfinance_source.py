@@ -30,17 +30,19 @@ class YahooSourceTests(unittest.TestCase):
         self.assertTrue(all(info["yahoo_symbol"] for info in main.TICKER_DB.values()))
 
     @patch("BACKEND.main.yf.Ticker")
-    def test_500_daily_bars_preserve_math_and_response(self, ticker):
+    def test_full_daily_history_preserves_math_and_response(self, ticker):
         ticker.return_value.history.return_value = self.history
         rows = main.get_volatility("JKSE", window=60)
         ticker.assert_called_once_with("^JKSE")
         options = ticker.return_value.history.call_args.kwargs
+        self.assertEqual(options["period"], "max")
+        self.assertNotIn("start", options)
         self.assertEqual(options["interval"], "1d")
         self.assertFalse(options["auto_adjust"])
-        self.assertEqual(len(rows), 500)
+        self.assertEqual(len(rows), len(self.history))
         self.assertEqual(set(rows[0]), {"date", "Open", "High", "Low", "Close", "GK_Vol", "GK_Zscore"})
-        self.assertEqual(rows[0]["date"], "2023-07-20")
-        expected = main.calculate_zscore_metrics(self.history.tail(500), 60).fillna(0)
+        self.assertEqual(rows[0]["date"], "2023-01-01")
+        expected = main.calculate_zscore_metrics(self.history, 60).fillna(0)
         self.assertAlmostEqual(rows[-1]["GK_Vol"], expected.iloc[-1]["GK_Vol"])
         self.assertAlmostEqual(rows[-1]["GK_Zscore"], expected.iloc[-1]["GK_Zscore"])
         json.dumps(rows, allow_nan=False)

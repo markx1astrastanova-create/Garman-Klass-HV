@@ -4,18 +4,25 @@ The existing React interface runs as a Streamlit custom component. Python calls
 the existing backend functions directly. No Railway, Vercel, public API server,
 or market-data account is required. Historical daily OHLC comes from Yahoo Finance
 through yfinance. Yahoo can limit or block requests; hosting on Streamlit does not
-guarantee market-data access. The default request returns the latest 500 available
-valid daily bars, not 60 bars; the window remains the volatility calculation window.
+guarantee market-data access. The default request loads all available valid daily
+OHLC history using Yahoo's `period="max"`, without a fixed bar cap. The window
+remains the volatility calculation window, not a history limit. The chart opens
+on recent data; drag or zoom out to navigate the loaded history. The REST API
+still accepts an optional `n_bars` limit only when explicitly requested.
 
 Yahoo symbols are stored separately in `BACKEND/data/idx_tickers.csv`, preserving
 the existing dropdown labels. Futures use Yahoo's front-month series, which can
 differ from TradingView continuous futures. No substitute ETF is used for an index.
 If Yahoo provides fewer valid OHLC bars than the selected window, the existing
 error banner explains the limit instead of showing misleading zero volatility.
-Local source checks found 500 bars for 17 of the 20 registered tickers. Yahoo
-returned only one valid OHLC bar for SET, VNINDEX, and PSEI during verification;
+Previous source checks found usable history for 17 of the 20 registered tickers.
+Yahoo returned only one valid OHLC bar for SET, VNINDEX, and PSEI during verification;
 these remain in the dropdown but cannot calculate historical volatility until
 Yahoo supplies sufficient OHLC history.
+
+The TradingView logo on the chart is attribution for the Lightweight Charts
+rendering library. It does not identify the market-data source; data comes from
+yfinance. Keep the chart's required attribution.
 
 To roll back the data-source migration, revert its Git commit and redeploy so
 the previous TradingView dependency and symbol registry return together.

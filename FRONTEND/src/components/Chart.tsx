@@ -51,8 +51,6 @@ const ChartComponent = ({ data }: ChartProps) => {
       },
     })
 
-    chart.timeScale().fitContent()
-
     // Candlestick Series
     const candleSeries = chart.addCandlestickSeries({
       upColor: '#00ff88',
@@ -96,6 +94,7 @@ const ChartComponent = ({ data }: ChartProps) => {
       value: d.GK_Zscore,
     }))
     zscoreSeries.setData(zscoreData)
+    chart.timeScale().scrollToRealTime()
 
     // Baseline threshold for Z-Score
     zscoreSeries.createPriceLine({

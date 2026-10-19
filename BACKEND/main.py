@@ -1,6 +1,5 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from datetime import datetime, timedelta, timezone
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -96,20 +95,19 @@ def get_tickers():
     return active_tickers
 
 @app.get("/api/volatility")
-def get_volatility(ticker: str, window: int = 60, n_bars: int = 500):
+def get_volatility(ticker: str, window: int = 60, n_bars: int | None = None):
     try:
         # Resolve ticker mapping
         info = resolve_ticker(ticker)
         symbol = info["yahoo_symbol"]
         if not symbol or symbol.lower() == 'nan':
             raise HTTPException(status_code=404, detail="Ticker belum memiliki simbol Yahoo Finance")
-        if n_bars < 1:
+        if n_bars is not None and n_bars < 1:
             raise HTTPException(status_code=422, detail="n_bars must be positive")
 
-        # Beri ruang untuk akhir pekan dan hari libur sebelum mengambil n_bars terakhir.
-        start = (datetime.now(timezone.utc) - timedelta(days=n_bars * 2 + 30)).date()
+        # Ambil seluruh riwayat harian yang tersedia dari Yahoo tanpa batas bar default.
         df_prices = yf.Ticker(symbol).history(
-            start=start.isoformat(), interval="1d", auto_adjust=False,
+            period="max", interval="1d", auto_adjust=False,
             actions=False, timeout=20, raise_errors=True,
         )
 
@@ -119,7 +117,9 @@ def get_volatility(ticker: str, window: int = 60, n_bars: int = 500):
         # Yahoo sudah memakai nama kolom OHLC yang dibutuhkan Math Engine.
         ohlc = ['Open', 'High', 'Low', 'Close']
         df_prices = df_prices.dropna(subset=ohlc)
-        df_prices = df_prices.loc[(df_prices[ohlc] > 0).all(axis=1)].sort_index().tail(n_bars)
+        df_prices = df_prices.loc[(df_prices[ohlc] > 0).all(axis=1)].sort_index()
+        if n_bars is not None:
+            df_prices = df_prices.tail(n_bars)
         if df_prices.empty:
             raise HTTPException(status_code=404, detail=f"Data OHLC untuk {symbol} tidak tersedia di Yahoo Finance.")
         if len(df_prices) < window:
