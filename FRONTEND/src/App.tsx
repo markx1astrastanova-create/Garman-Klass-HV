@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import ChartComponent from './components/Chart'
 import TickerDropdown, { TickerInfo } from './components/TickerDropdown'
+import { apiFetch } from './api'
 
 function App() {
   const [ticker, setTicker] = useState('JKSE')
@@ -14,8 +15,7 @@ function App() {
   useEffect(() => {
     const fetchTickers = async () => {
       try {
-        const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
-        const res = await fetch(`${baseUrl}/api/tickers`);
+        const res = await apiFetch('/api/tickers');
         if (res.ok) {
           const list = await res.json();
           setTickers(list);
@@ -32,7 +32,7 @@ function App() {
     setError(null)
     try {
       const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
-      const response = await fetch(`${baseUrl}/api/volatility?ticker=${targetTicker}&window=${targetWindow}`)
+      const response = await apiFetch(`/api/volatility?ticker=${encodeURIComponent(targetTicker)}&window=${targetWindow}`)
       
       if (!response.ok) {
         const isJson = response.headers.get("content-type")?.includes("application/json");

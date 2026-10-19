@@ -1,0 +1,6 @@
+FRONTEND/streamlit_dist/
+FRONTEND/dist/
+FRONTEND/node_modules/
+.venv/
+graft/
+graphify-out/

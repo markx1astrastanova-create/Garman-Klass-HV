@@ -1,0 +1,2 @@
+-r BACKEND/requirements.txt
+streamlit>=1.41,<2

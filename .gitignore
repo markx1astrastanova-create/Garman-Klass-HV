@@ -27,3 +27,8 @@ Thumbs.db
 .pdf
 .md
 .bat
+
+# Local code maps and Streamlit secrets
+graft/
+graphify-out/
+.streamlit/secrets.toml
